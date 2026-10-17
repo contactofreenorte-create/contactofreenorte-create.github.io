@@ -1,0 +1,115 @@
+/* ==========================================================================
+   LEGAL — Páginas de texto: política de privacidad y página no encontrada
+   ========================================================================== */
+
+.legal-header {
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg-alt);
+}
+
+.legal-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 72px;
+}
+
+.legal-header .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-family: var(--font-heading);
+  font-size: 1.1875rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.legal-header .logo__mark {
+  width: 36px;
+  height: 36px;
+}
+
+.legal-header .logo__text span {
+  color: var(--color-primary);
+}
+
+.legal {
+  max-width: 780px;
+  padding-block: 3.5rem 4.5rem;
+}
+
+.legal h1 {
+  margin: 1rem 0 0.4rem;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+}
+
+.legal__fecha {
+  margin-bottom: 2rem;
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+.legal h2 {
+  margin: 2.2rem 0 0.7rem;
+  font-size: 1.25rem;
+}
+
+.legal p,
+.legal li {
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.legal strong {
+  color: var(--color-text);
+}
+
+.legal ul {
+  display: grid;
+  gap: 0.6rem;
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.legal a:not(.btn) {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal__volver {
+  margin-top: 2.5rem;
+}
+
+.legal-footer {
+  padding-block: 1.5rem;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+/* Página no encontrada */
+.no-encontrada {
+  display: grid;
+  place-content: center;
+  min-height: 70vh;
+  text-align: center;
+}
+
+.no-encontrada strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(5rem, 20vw, 9rem);
+  line-height: 1;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.no-encontrada p {
+  margin: 1rem auto 2rem;
+  max-width: 420px;
+  color: var(--color-text-muted);
+}

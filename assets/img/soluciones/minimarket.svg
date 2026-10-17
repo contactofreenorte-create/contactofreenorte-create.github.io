@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Almacén / minimarket: estanterías con productos y carro de compras -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#111c2c"/>
+      <stop offset="1" stop-color="#070b14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#4ade80" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <symbol id="bottle" viewBox="0 0 26 70">
+      <path d="M9 0h8v12q9 6 9 16v38q0 4-4 4H4q-4 0-4-4V28q0-10 9-16z" fill="currentColor"/>
+      <rect x="0" y="36" width="26" height="16" fill="#fff" opacity=".35"/>
+      <rect x="4" y="18" width="4" height="44" rx="2" fill="#fff" opacity=".25"/>
+    </symbol>
+    <symbol id="can" viewBox="0 0 30 44">
+      <rect width="30" height="44" rx="5" fill="currentColor"/>
+      <rect y="0" width="30" height="7" rx="3" fill="#e2e8f0" opacity=".7"/>
+      <rect y="18" width="30" height="10" fill="#fff" opacity=".3"/>
+    </symbol>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect x="70" y="24" width="660" height="410" rx="14" fill="#0c1424" stroke="#4ade80" stroke-opacity=".2"/>
+  <rect width="800" height="450" fill="url(#glow)"/>
+
+  <!-- Fila 1: cajas -->
+  <g>
+    <rect x="96" y="58" width="44" height="52" rx="4" fill="#4ade80"/>
+    <rect x="146" y="46" width="40" height="64" rx="4" fill="#fbbf24"/>
+    <rect x="192" y="62" width="50" height="48" rx="4" fill="#f87171"/>
+    <rect x="248" y="50" width="38" height="60" rx="4" fill="#60a5fa"/>
+    <rect x="292" y="58" width="46" height="52" rx="4" fill="#e2e8f0"/>
+    <rect x="344" y="44" width="40" height="66" rx="4" fill="#4ade80"/>
+    <rect x="390" y="60" width="52" height="50" rx="4" fill="#a78bfa"/>
+    <rect x="448" y="52" width="40" height="58" rx="4" fill="#fbbf24"/>
+    <rect x="494" y="62" width="46" height="48" rx="4" fill="#22d3ee"/>
+    <rect x="546" y="46" width="40" height="64" rx="4" fill="#f472b6"/>
+    <rect x="592" y="58" width="50" height="52" rx="4" fill="#4ade80"/>
+    <rect x="648" y="50" width="54" height="60" rx="4" fill="#60a5fa"/>
+    <g fill="#fff" opacity=".3">
+      <rect x="96" y="78" width="44" height="12"/>
+      <rect x="146" y="72" width="40" height="12"/>
+      <rect x="192" y="80" width="50" height="12"/>
+      <rect x="248" y="74" width="38" height="12"/>
+      <rect x="292" y="78" width="46" height="12"/>
+      <rect x="344" y="70" width="40" height="12"/>
+      <rect x="390" y="79" width="52" height="12"/>
+      <rect x="448" y="75" width="40" height="12"/>
+      <rect x="494" y="80" width="46" height="12"/>
+      <rect x="546" y="72" width="40" height="12"/>
+      <rect x="592" y="78" width="50" height="12"/>
+      <rect x="648" y="74" width="54" height="12"/>
+    </g>
+  </g>
+  <rect x="86" y="110" width="628" height="8" rx="4" fill="#4ade80" opacity=".85"/>
+
+  <!-- Fila 2: botellas -->
+  <g>
+    <use href="#bottle" x="100" y="125" width="26" height="70" color="#22d3ee"/>
+    <use href="#bottle" x="134" y="125" width="26" height="70" color="#f87171"/>
+    <use href="#bottle" x="168" y="125" width="26" height="70" color="#fbbf24"/>
+    <use href="#bottle" x="202" y="125" width="26" height="70" color="#4ade80"/>
+    <use href="#bottle" x="236" y="125" width="26" height="70" color="#22d3ee"/>
+    <use href="#bottle" x="270" y="125" width="26" height="70" color="#a78bfa"/>
+    <use href="#bottle" x="304" y="125" width="26" height="70" color="#f87171"/>
+    <use href="#bottle" x="338" y="125" width="26" height="70" color="#fbbf24"/>
+    <use href="#bottle" x="372" y="125" width="26" height="70" color="#60a5fa"/>
+    <use href="#bottle" x="406" y="125" width="26" height="70" color="#4ade80"/>
+    <use href="#bottle" x="440" y="125" width="26" height="70" color="#f472b6"/>
+    <use href="#bottle" x="474" y="125" width="26" height="70" color="#22d3ee"/>
+    <use href="#bottle" x="508" y="125" width="26" height="70" color="#fbbf24"/>
+    <use href="#bottle" x="542" y="125" width="26" height="70" color="#f87171"/>
+    <use href="#bottle" x="576" y="125" width="26" height="70" color="#a78bfa"/>
+    <use href="#bottle" x="610" y="125" width="26" height="70" color="#4ade80"/>
+    <use href="#bottle" x="644" y="125" width="26" height="70" color="#60a5fa"/>
+    <use href="#bottle" x="678" y="125" width="26" height="70" color="#22d3ee"/>
+  </g>
+  <rect x="86" y="195" width="628" height="8" rx="4" fill="#4ade80" opacity=".85"/>
+
+  <!-- Fila 3: latas -->
+  <g>
+    <use href="#can" x="100" y="236" width="30" height="44" color="#f87171"/>
+    <use href="#can" x="136" y="236" width="30" height="44" color="#f87171"/>
+    <use href="#can" x="172" y="236" width="30" height="44" color="#fbbf24"/>
+    <use href="#can" x="208" y="236" width="30" height="44" color="#fbbf24"/>
+    <use href="#can" x="244" y="236" width="30" height="44" color="#4ade80"/>
+    <use href="#can" x="280" y="236" width="30" height="44" color="#4ade80"/>
+    <use href="#can" x="316" y="236" width="30" height="44" color="#60a5fa"/>
+    <use href="#can" x="352" y="236" width="30" height="44" color="#60a5fa"/>
+    <use href="#can" x="388" y="236" width="30" height="44" color="#a78bfa"/>
+    <use href="#can" x="424" y="236" width="30" height="44" color="#a78bfa"/>
+    <use href="#can" x="460" y="236" width="30" height="44" color="#22d3ee"/>
+    <use href="#can" x="496" y="236" width="30" height="44" color="#22d3ee"/>
+    <use href="#can" x="532" y="236" width="30" height="44" color="#f472b6"/>
+    <use href="#can" x="568" y="236" width="30" height="44" color="#f472b6"/>
+    <use href="#can" x="604" y="236" width="30" height="44" color="#fbbf24"/>
+    <use href="#can" x="640" y="236" width="30" height="44" color="#f87171"/>
+    <use href="#can" x="676" y="236" width="30" height="44" color="#4ade80"/>
+  </g>
+  <rect x="86" y="280" width="628" height="8" rx="4" fill="#4ade80" opacity=".85"/>
+
+  <!-- Carro de compras -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="355" y="205" width="34" height="30" rx="4" fill="#fbbf24"/>
+    <rect x="394" y="196" width="30" height="40" rx="4" fill="#f87171"/>
+    <use href="#bottle" x="430" y="182" width="22" height="58" color="#22d3ee"/>
+    <rect x="456" y="208" width="30" height="28" rx="4" fill="#a78bfa"/>
+    <path d="M330 225H500L480 300H350Z" fill="#0b1324" fill-opacity=".88"/>
+    <g stroke="#4ade80" stroke-width="10" fill="none" opacity=".45" filter="url(#blur)">
+      <path d="M292 205H318L330 225H500L480 300H350L330 225"/>
+    </g>
+    <g stroke="#4ade80" stroke-width="7" fill="none">
+      <path d="M292 205H318L330 225H500L480 300H350L330 225"/>
+      <path d="M350 300L358 318H478"/>
+    </g>
+    <g stroke="#4ade80" stroke-width="3" opacity=".6">
+      <path d="M372 228V297M396 228V297M420 228V297M444 228V297M468 228V297"/>
+      <path d="M338 252H493M345 276H487"/>
+    </g>
+    <circle cx="370" cy="332" r="12" fill="#0b1324" stroke="#4ade80" stroke-width="6"/>
+    <circle cx="466" cy="332" r="12" fill="#0b1324" stroke="#4ade80" stroke-width="6"/>
+  </g>
+
+  <rect y="410" width="800" height="40" fill="#05080f"/>
+</svg>

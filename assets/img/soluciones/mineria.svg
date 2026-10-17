@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Minería: camión minero frente a cerros al atardecer -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1020"/>
+      <stop offset=".55" stop-color="#1d1a2e"/>
+      <stop offset="1" stop-color="#4a2616"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="68%" cy="58%" r="45%">
+      <stop offset="0" stop-color="#fb923c" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#fb923c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdba74"/>
+      <stop offset="1" stop-color="#ea580c"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#sky)"/>
+  <rect width="800" height="450" fill="url(#sun)"/>
+
+  <!-- Estrellas -->
+  <g fill="#e2e8f0" opacity=".6">
+    <circle cx="80" cy="40" r="1.5"/><circle cx="160" cy="80" r="1"/><circle cx="240" cy="30" r="1.5"/>
+    <circle cx="330" cy="66" r="1"/><circle cx="620" cy="36" r="1.5"/><circle cx="700" cy="74" r="1"/>
+    <circle cx="740" cy="30" r="1"/><circle cx="470" cy="44" r="1"/>
+  </g>
+
+  <!-- Sol -->
+  <circle cx="560" cy="232" r="54" fill="#fb923c" filter="url(#blur)" opacity=".8"/>
+  <circle cx="560" cy="232" r="44" fill="#fdba74"/>
+
+  <!-- Cerros -->
+  <path d="M0 230L90 170L170 205L270 130L380 200L470 160L560 215L660 140L800 210V450H0Z" fill="#1c1f35"/>
+  <path d="M0 270L110 225L220 250L330 205L450 255L560 225L680 260L800 235V450H0Z" fill="#141829"/>
+
+  <!-- Rajo abierto: terrazas -->
+  <path d="M0 305H150L175 290H300L325 276H520L545 290H660L690 305H800V450H0Z" fill="#0f1320"/>
+  <g stroke="#fb923c" stroke-opacity=".35" stroke-width="2" fill="none">
+    <path d="M0 305H150L175 290H300L325 276H520L545 290H660L690 305H800"/>
+  </g>
+  <rect y="332" width="800" height="118" fill="#0a0d17"/>
+
+  <!-- Camión minero -->
+  <g>
+    <!-- Tolva -->
+    <path d="M170 176L468 158L480 172L438 248H205Z" fill="url(#bed)"/>
+    <g stroke="#9a3412" stroke-width="4" opacity=".55">
+      <path d="M230 176L240 246M290 172L298 246M350 168L356 246M410 165L412 246"/>
+    </g>
+    <path d="M170 176L468 158L480 172" fill="none" stroke="#fed7aa" stroke-width="4" stroke-linecap="round"/>
+    <!-- Cabina -->
+    <path d="M440 196H502Q510 196 510 204V250H440Z" fill="#fdba74"/>
+    <rect x="452" y="204" width="44" height="22" rx="3" fill="#0b1324"/>
+    <path d="M458 222L474 207" stroke="#fff" stroke-width="3" opacity=".35" stroke-linecap="round"/>
+    <path d="M425 206H440M425 206V250M430 216H440M430 228H440M430 240H440" stroke="#fed7aa" stroke-width="3" fill="none"/>
+    <!-- Chasis -->
+    <rect x="195" y="248" width="325" height="22" rx="4" fill="#1f2937"/>
+    <rect x="505" y="244" width="20" height="10" rx="3" fill="#fbbf24"/>
+    <!-- Ruedas -->
+    <g>
+      <circle cx="262" cy="288" r="44" fill="#0b1020" stroke="#334155" stroke-width="8"/>
+      <circle cx="262" cy="288" r="44" fill="none" stroke="#1e293b" stroke-width="8" stroke-dasharray="6 8"/>
+      <circle cx="262" cy="288" r="17" fill="#fb923c"/>
+      <circle cx="262" cy="288" r="6" fill="#7c2d12"/>
+      <circle cx="455" cy="288" r="44" fill="#0b1020" stroke="#334155" stroke-width="8"/>
+      <circle cx="455" cy="288" r="44" fill="none" stroke="#1e293b" stroke-width="8" stroke-dasharray="6 8"/>
+      <circle cx="455" cy="288" r="17" fill="#fb923c"/>
+      <circle cx="455" cy="288" r="6" fill="#7c2d12"/>
+    </g>
+  </g>
+
+  <!-- Polvo en el suelo -->
+  <ellipse cx="360" cy="335" rx="260" ry="10" fill="#fb923c" opacity=".12"/>
+</svg>

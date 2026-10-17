@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Otros negocios: tienda de ropa con colgador y lámparas -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101a31"/>
+      <stop offset="1" stop-color="#070b14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#60a5fa" stop-opacity=".26"/>
+      <stop offset="1" stop-color="#60a5fa" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lamp" cx="50%" cy="0%" r="100%">
+      <stop offset="0" stop-color="#fde68a" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#fde68a" stop-opacity="0"/>
+    </radialGradient>
+    <symbol id="shirt" viewBox="0 -20 90 120">
+      <path d="M45-18q6 0 6 5t-6 7v6" fill="none" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round"/>
+      <path d="M45-6L14 6M45-6l31 12" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round"/>
+      <path d="M30 2q15 12 30 0l30 14-10 24-12-6v62H22V34l-12 6L0 16Z" fill="currentColor"/>
+      <path d="M30 2q15 12 30 0" fill="none" stroke="#fff" stroke-width="3" opacity=".4"/>
+    </symbol>
+    <symbol id="dress" viewBox="0 -20 80 140">
+      <path d="M40-18q6 0 6 5t-6 7v6" fill="none" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round"/>
+      <path d="M40-6L12 6M40-6l28 12" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round"/>
+      <path d="M26 2q14 10 28 0l6 32-5 8 22 76H3l22-76-5-8Z" fill="currentColor"/>
+      <path d="M20 42h40" stroke="#fff" stroke-width="3" opacity=".35"/>
+    </symbol>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect x="60" y="24" width="680" height="410" rx="18" fill="#0d1628" stroke="#60a5fa" stroke-opacity=".22"/>
+  <rect width="800" height="450" fill="url(#glow)"/>
+
+  <!-- Lámparas colgantes -->
+  <g>
+    <path d="M140 60L60 330H220Z" fill="url(#lamp)"/>
+    <path d="M660 60L580 330H740Z" fill="url(#lamp)"/>
+    <path d="M140 24V44M660 24V44" stroke="#94a3b8" stroke-width="2"/>
+    <path d="M122 60L130 44H150L158 60Z" fill="#fbbf24"/>
+    <path d="M642 60L650 44H670L678 60Z" fill="#fbbf24"/>
+  </g>
+
+  <!-- Repisa con ropa doblada -->
+  <g>
+    <rect x="96" y="150" width="84" height="16" rx="4" fill="#60a5fa"/>
+    <rect x="100" y="134" width="76" height="16" rx="4" fill="#f472b6"/>
+    <rect x="96" y="118" width="84" height="16" rx="4" fill="#e2e8f0"/>
+    <rect x="620" y="150" width="84" height="16" rx="4" fill="#fbbf24"/>
+    <rect x="624" y="134" width="76" height="16" rx="4" fill="#22d3ee"/>
+    <rect x="620" y="118" width="84" height="16" rx="4" fill="#a78bfa"/>
+    <rect x="84" y="166" width="108" height="6" rx="3" fill="#60a5fa" opacity=".6"/>
+    <rect x="608" y="166" width="108" height="6" rx="3" fill="#60a5fa" opacity=".6"/>
+  </g>
+
+  <!-- Colgador -->
+  <g stroke="#94a3b8" stroke-width="7" stroke-linecap="round" fill="none">
+    <path d="M225 110H575"/>
+    <path d="M232 110V330M568 110V330"/>
+    <path d="M205 330H260M540 330H595"/>
+  </g>
+
+  <!-- Prendas -->
+  <use href="#shirt" x="238" y="92" width="90" height="120" color="#60a5fa"/>
+  <use href="#dress" x="306" y="92" width="80" height="140" color="#f472b6"/>
+  <use href="#shirt" x="366" y="92" width="90" height="120" color="#e2e8f0"/>
+  <use href="#dress" x="434" y="92" width="80" height="140" color="#a78bfa"/>
+  <use href="#shirt" x="484" y="92" width="90" height="120" color="#fbbf24"/>
+
+  <rect y="410" width="800" height="40" fill="#05080f"/>
+</svg>

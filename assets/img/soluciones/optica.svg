@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Óptica: muro de exhibición de lentes con focos -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#15142e"/>
+      <stop offset="1" stop-color="#070b14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ddd6fe" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#ddd6fe" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lens" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".04"/>
+    </linearGradient>
+    <symbol id="glasses" viewBox="0 0 112 44">
+      <rect x="3" y="6" width="44" height="32" rx="14" fill="url(#lens)" stroke="currentColor" stroke-width="5"/>
+      <rect x="65" y="6" width="44" height="32" rx="14" fill="url(#lens)" stroke="currentColor" stroke-width="5"/>
+      <path d="M47 16q9-7 18 0" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <path d="M12 14l10-4M74 14l10-4" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+    </symbol>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect x="60" y="24" width="680" height="410" rx="18" fill="#0f1125" stroke="#a78bfa" stroke-opacity=".22"/>
+  <rect width="800" height="450" fill="url(#glow)"/>
+
+  <!-- Focos -->
+  <g>
+    <path d="M190 24L130 330H250Z" fill="url(#beam)"/>
+    <path d="M400 24L340 330H460Z" fill="url(#beam)"/>
+    <path d="M610 24L550 330H670Z" fill="url(#beam)"/>
+    <rect x="176" y="24" width="28" height="10" rx="3" fill="#ddd6fe"/>
+    <rect x="386" y="24" width="28" height="10" rx="3" fill="#ddd6fe"/>
+    <rect x="596" y="24" width="28" height="10" rx="3" fill="#ddd6fe"/>
+  </g>
+
+  <!-- Barras de exhibición -->
+  <g fill="#a78bfa" opacity=".45">
+    <rect x="80" y="104" width="640" height="4" rx="2"/>
+    <rect x="80" y="189" width="640" height="4" rx="2"/>
+    <rect x="80" y="274" width="640" height="4" rx="2"/>
+  </g>
+
+  <!-- Lentes -->
+  <use href="#glasses" x="94" y="72" width="112" height="44" color="#a78bfa"/>
+  <use href="#glasses" x="219" y="72" width="112" height="44" color="#e2e8f0"/>
+  <use href="#glasses" x="344" y="72" width="112" height="44" color="#f472b6"/>
+  <use href="#glasses" x="469" y="72" width="112" height="44" color="#94a3b8"/>
+  <use href="#glasses" x="594" y="72" width="112" height="44" color="#22d3ee"/>
+
+  <use href="#glasses" x="94" y="157" width="112" height="44" color="#fbbf24"/>
+  <use href="#glasses" x="219" y="157" width="112" height="44" color="#a78bfa"/>
+  <use href="#glasses" x="344" y="157" width="112" height="44" color="#94a3b8"/>
+  <use href="#glasses" x="469" y="157" width="112" height="44" color="#f87171"/>
+  <use href="#glasses" x="594" y="157" width="112" height="44" color="#e2e8f0"/>
+
+  <use href="#glasses" x="94" y="242" width="112" height="44" color="#22d3ee"/>
+  <use href="#glasses" x="219" y="242" width="112" height="44" color="#f472b6"/>
+  <use href="#glasses" x="344" y="242" width="112" height="44" color="#a78bfa"/>
+  <use href="#glasses" x="469" y="242" width="112" height="44" color="#fbbf24"/>
+  <use href="#glasses" x="594" y="242" width="112" height="44" color="#a78bfa"/>
+
+  <!-- Mesón -->
+  <rect x="140" y="330" width="520" height="14" rx="7" fill="#a78bfa" opacity=".8"/>
+  <rect x="160" y="344" width="480" height="70" fill="#141733"/>
+  <rect y="410" width="800" height="40" fill="#05080f"/>
+</svg>

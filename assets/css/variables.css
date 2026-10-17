@@ -1,0 +1,113 @@
+/* ==========================================================================
+   VARIABLES — Identidad visual de FREENORTE
+   Cambia aquí colores, tipografías y espaciados para todo el sitio.
+   ========================================================================== */
+
+:root {
+  /* Fondos */
+  --color-bg: #05080f;
+  --color-bg-alt: #080d18;
+  --color-surface: #0c1322;
+  --color-surface-2: #111a2e;
+
+  /* Texto */
+  --color-text: #ffffff;
+  --color-text-muted: #a5b2c7;
+  --color-text-soft: #8794ab;
+
+  /* Marca */
+  --color-primary: #22d3ee;
+  --color-primary-strong: #06b6d4;
+  --color-secondary: #3b82f6;
+  --color-on-primary: #03121b;
+
+  /* Estados */
+  --color-success: #34d399;
+  --color-danger: #f87171;
+  --color-whatsapp: #25d366;
+
+  /* Bordes */
+  --color-border: rgba(148, 180, 230, 0.12);
+  --color-border-hover: rgba(34, 211, 238, 0.4);
+
+  /* Mismos colores en formato R, G, B para usarlos con transparencia: rgba(var(--rgb-primary), .2) */
+  --rgb-primary: 34, 211, 238;
+  --rgb-secondary: 59, 130, 246;
+  --rgb-bg: 5, 8, 15;
+  --rgb-line: 148, 180, 230;
+
+  /* Gradientes */
+  --gradient-primary: linear-gradient(135deg, #22d3ee 0%, #3b82f6 100%);
+  --gradient-text: linear-gradient(120deg, #ffffff 5%, #67e8f9 50%, #60a5fa 100%);
+  --gradient-card: linear-gradient(160deg, rgba(34, 211, 238, 0.05) 0%, rgba(59, 130, 246, 0.02) 40%, transparent 100%);
+  --gradient-border: linear-gradient(135deg, rgba(34, 211, 238, 0.6), rgba(59, 130, 246, 0.2) 50%, rgba(34, 211, 238, 0.08));
+
+  /* Tipografía */
+  --font-heading: 'Sora', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-base: 1rem;
+  --fs-lg: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
+  --fs-h3: 1.1875rem;
+  --fs-h2: clamp(1.875rem, 1.35rem + 2.1vw, 2.875rem);
+  --fs-display: clamp(2.375rem, 1.4rem + 4.4vw, 4.625rem);
+
+  /* Espaciado */
+  --section-space: clamp(4.5rem, 3rem + 6vw, 8rem);
+  --container-width: 1200px;
+  --container-padding: 1.25rem;
+  --header-height: 72px;
+
+  /* Bordes redondeados */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+
+  /* Sombras */
+  --shadow-card: 0 24px 48px -28px rgba(0, 0, 0, 0.7);
+  --shadow-glow: 0 10px 36px -10px rgba(34, 211, 238, 0.5);
+
+  /* Transiciones */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --transition-fast: 0.2s var(--ease);
+  --transition: 0.35s var(--ease);
+}
+
+/* ==========================================================================
+   TEMA ORO — Negro con dorado (se activa con data-theme="oro" en <html>)
+   El selector de tema está en el header; la elección se guarda en el navegador.
+   ========================================================================== */
+:root[data-theme="oro"] {
+  --color-bg: #070605;
+  --color-bg-alt: #0c0a07;
+  --color-surface: #14110b;
+  --color-surface-2: #1d180f;
+
+  --color-text: #fffaf0;
+  --color-text-muted: #c2b8a3;
+  --color-text-soft: #978d78;
+
+  --color-primary: #e3b85b;
+  --color-primary-strong: #c99a3c;
+  --color-secondary: #a9741c;
+  --color-on-primary: #1a1204;
+
+  --color-border: rgba(227, 184, 91, 0.14);
+  --color-border-hover: rgba(227, 184, 91, 0.45);
+
+  --rgb-primary: 227, 184, 91;
+  --rgb-secondary: 169, 116, 28;
+  --rgb-bg: 7, 6, 5;
+  --rgb-line: 227, 184, 91;
+
+  --gradient-primary: linear-gradient(135deg, #f4d77f 0%, #c48a26 100%);
+  --gradient-text: linear-gradient(120deg, #ffffff 5%, #f3d98f 50%, #d9a441 100%);
+  --gradient-card: linear-gradient(160deg, rgba(227, 184, 91, 0.06) 0%, rgba(169, 116, 28, 0.025) 40%, transparent 100%);
+  --gradient-border: linear-gradient(135deg, rgba(227, 184, 91, 0.65), rgba(169, 116, 28, 0.2) 50%, rgba(227, 184, 91, 0.08));
+
+  --shadow-glow: 0 10px 36px -10px rgba(227, 184, 91, 0.45);
+}

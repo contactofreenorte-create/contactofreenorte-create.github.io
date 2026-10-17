@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="oro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FREENORTE | Sistemas de venta y gestión para tu negocio</title>
+  <meta name="description" content="Sistemas de punto de venta y gestión listos para farmacias, ópticas, minería, perfumerías, tiendas de ropa y calzado, bazares y minimarkets. Míralos en video y prueba VentaFácil gratis en línea. FREENORTE, Chile.">
+  <meta name="theme-color" content="#070605">
+
+  <!-- Vista previa al compartir en redes -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FREENORTE | Sistemas de venta y gestión para tu negocio">
+  <meta property="og:description" content="Sistemas listos para farmacias, ópticas, minería, perfumerías, tiendas y más. Funcionan en computador y celular. Míralos en video.">
+  <meta property="og:image" content="assets/img/sistemas/mineria.png">
+  <meta property="og:locale" content="es_CL">
+
+  <link rel="icon" href="assets/img/logo/favicon.svg" type="image/svg+xml">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos (el orden importa) -->
+  <link rel="stylesheet" href="assets/css/variables.css?v=6">
+  <link rel="stylesheet" href="assets/css/base.css?v=6">
+  <link rel="stylesheet" href="assets/css/layout.css?v=6">
+  <link rel="stylesheet" href="assets/css/components.css?v=6">
+  <link rel="stylesheet" href="assets/css/sections.css?v=6">
+  <link rel="stylesheet" href="assets/css/sistemas.css?v=6">
+  <link rel="stylesheet" href="assets/css/animations.css?v=6">
+  <link rel="stylesheet" href="assets/css/responsive.css?v=6">
+  <link rel="stylesheet" href="assets/css/tema.css?v=6">
+
+  <!-- Indica que hay JavaScript, para activar las animaciones de aparición -->
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="assets/js/tema-init.js?v=6"></script>
+
+  <!-- Scripts (se ejecutan al terminar de cargar el HTML) -->
+  <script src="assets/js/navigation.js?v=6" defer></script>
+  <script src="assets/js/animations.js?v=6" defer></script>
+  <script src="assets/js/contact-form.js?v=6" defer></script>
+  <script src="assets/js/sistemas.js?v=6" defer></script>
+  <script src="assets/js/tema.js?v=6" defer></script>
+  <script src="assets/js/main.js?v=6" defer></script>
+</head>
+<body>
+
+  <!-- ===================================================================
+       ÍCONOS — Se usan en la página con <svg class="icon"><use href="#i-nombre"/></svg>
+       =================================================================== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <!-- GESTIONA POS -->
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5V8z"/><path d="m3 8 9 5 9-5M12 13v8"/></symbol>
+    <symbol id="i-trending" viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16v-4M12 16V8M17 16v-6"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r="1.5"/></symbol>
+    <symbol id="i-cash" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 12h.01M18 12h.01"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+    <symbol id="i-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 8v8M10 8v8M14 8v8M17 8v8"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1z"/><path d="M8 7h8M8 11h8M8 15h5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M2 14h4M10 8h4M18 16h4"/></symbol>
+    <!-- Soluciones -->
+    <symbol id="i-shoe" viewBox="0 0 24 24"><path d="M3 17V8.5a1 1 0 0 1 1.3-.95l2.2.7 1.3 2.3 2.7-.8 3 2.8 5.3 1.5A2.5 2.5 0 0 1 21 16.4V17z"/><path d="M3 20h18"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2 2h3l2.7 12.4a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 2-1.6L22 7H6"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9 4.5 4h15L21 9"/><path d="M3 9h18M5 9v11h14V9"/><path d="M10 20v-5h4v5"/></symbol>
+    <symbol id="i-glasses" viewBox="0 0 24 24"><circle cx="6" cy="15" r="4"/><circle cx="18" cy="15" r="4"/><path d="M10 15a2 2 0 0 1 4 0M2.5 13 5 6h1M21.5 13 19 6h-1"/></symbol>
+    <symbol id="i-cross" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></symbol>
+    <symbol id="i-grid-plus" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M17.5 14v7M14 17.5h7"/></symbol>
+    <!-- Servicios -->
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></symbol>
+    <symbol id="i-app" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8h20M6 6h.01M9 6h.01"/><path d="m10 12-2 2 2 2M14 12l2 2-2 2"/></symbol>
+    <symbol id="i-data" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+    <symbol id="i-headset" viewBox="0 0 24 24"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></symbol>
+    <!-- Beneficios -->
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="m12 3 1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 3v4M17 5h4M5 17v4M3 19h4"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></symbol>
+    <symbol id="i-unlock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></symbol>
+    <symbol id="i-lifebuoy" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><path d="m4.9 4.9 4.3 4.3M14.8 14.8l4.3 4.3M14.8 9.2l4.3-4.3M4.9 19.1l4.3-4.3"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></symbol>
+    <!-- Proceso -->
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.9A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.6-3 2-4c1.6-1.1 5 0 5 0M12 15v5s3-.6 4-2c1.1-1.6 0-5 0-5"/></symbol>
+    <!-- Generales -->
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/><path d="M8.5 11.5c.5 1.5 1.8 2.8 3.5 3.5l1.2-1.2 2 .8v1.6c-4 .5-8-3.5-7.5-7.5h1.6l.8 2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+    <!-- Sistemas -->
+    <symbol id="i-perfume" viewBox="0 0 24 24"><path d="M9 2h6v4H9z"/><path d="M8 6h8a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3z"/><path d="M9 13h6"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6.3 8h11.4a2 2 0 0 1 2 1.8l.9 10a2 2 0 0 1-2 2.2H5.4a2 2 0 0 1-2-2.2l.9-10A2 2 0 0 1 6.3 8z"/><path d="M9 11V6a3 3 0 0 1 6 0v5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-wifi-off" viewBox="0 0 24 24"><path d="M12 20h.01M8.5 16.4a5 5 0 0 1 7 0M2 8.8a15 15 0 0 1 4.2-2.7M22 8.8a15 15 0 0 0-11.3-3.6M5 12.9a10 10 0 0 1 5.2-2.7M19 12.9a10 10 0 0 0-2.5-1.9M2 2l20 20"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.7-9h1.8a4.5 4.5 0 1 1 0 9z"/></symbol>
+    <symbol id="i-printer" viewBox="0 0 24 24"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></symbol>
+  </svg>
+
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+
+  <!-- ===================================================================
+       1. HEADER
+       =================================================================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="FREENORTE, ir al inicio">
+        <img src="assets/img/logo/favicon.svg" alt="" class="logo__mark" width="36" height="36">
+        <span class="logo__text">FREE<span>NORTE</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Inicio</a></li>
+          <li><a href="#sistemas" class="nav__link">Sistemas</a></li>
+          <li><a href="#servicios" class="nav__link">Servicios</a></li>
+          <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+          <li><a href="#preguntas" class="nav__link">Preguntas</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+        <a href="#sistemas" class="btn btn--primary nav__cta">Ver sistemas</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema de color" title="Cambiar tema de color">
+        <span class="theme-toggle__dot" aria-hidden="true"></span>
+        <span class="theme-toggle__label" data-theme-label>Oro</span>
+      </button>
+
+      <button class="nav-toggle" type="button" aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- =================================================================
+         2. HERO
+         ================================================================= -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+      </div>
+
+      <div class="container hero__content">
+        <p class="eyebrow" data-reveal style="--d:0">
+          <span class="eyebrow__dot"></span> Sistemas de venta y gestión hechos en Chile
+        </p>
+        <h1 class="hero__title" id="hero-title" data-reveal style="--d:1">
+          El sistema que tu negocio necesita, <span class="text-gradient">listo para usar</span>
+        </h1>
+        <p class="hero__subtitle" data-reveal style="--d:2">
+          Punto de venta, inventario, caja y reportes adaptados a tu rubro. Funcionan en computador, tablet y celular,
+          también sin internet. Mira cómo funciona cada uno en un video de un minuto.
+        </p>
+        <div class="hero__rubros" data-reveal style="--d:2" aria-label="Rubros">
+          <a href="#sistemas"><svg class="icon" aria-hidden="true"><use href="#i-cross"/></svg> Farmacias</a>
+          <a href="#sistemas"><svg class="icon" aria-hidden="true"><use href="#i-glasses"/></svg> Ópticas</a>
+          <a href="#sistemas"><svg class="icon" aria-hidden="true"><use href="#i-mountain"/></svg> Minería</a>
+          <a href="#sistemas"><svg class="icon" aria-hidden="true"><use href="#i-perfume"/></svg> Perfumerías</a>
+          <a href="#sistemas"><svg class="icon" aria-hidden="true"><use href="#i-shoe"/></svg> Ropa y calzado</a>
+          <a href="#sistemas"><svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg> Bazares y minimarkets</a>
+        </div>
+        <div class="hero__actions" data-reveal style="--d:3">
+          <a href="#sistemas" class="btn btn--primary btn--lg">
+            Ver sistemas en video
+            <svg class="icon btn__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <a href="demos/articulos/index.html" class="btn btn--ghost btn--lg" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Probar demo en vivo
+          </a>
+        </div>
+        <ul class="hero__highlights" data-reveal style="--d:4">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Videos de cada sistema</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Instalación y capacitación</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Soporte cercano</li>
+        </ul>
+
+        <!-- Capturas reales de los sistemas -->
+        <div class="showcase" data-reveal="zoom" style="--d:4">
+          <div class="browser">
+            <div class="browser__bar"><i></i><i></i><i></i><span>FaenaPro · Panel de la faena</span></div>
+            <img src="assets/img/sistemas/mineria.png" alt="Panel del sistema FaenaPro para minería con producción, combustible, equipos y alertas" width="1440" height="900">
+          </div>
+          <div class="phone">
+            <img src="assets/img/sistemas/movil-farmacia.png" alt="FarmaPOS vendiendo desde un celular" width="780" height="1688" loading="lazy">
+          </div>
+          <div class="showcase__badge" aria-hidden="true">
+            <span class="icon-box"><svg class="icon"><use href="#i-phone"/></svg></span>
+            <div><strong>También en el celular</strong><span>Se instala como una aplicación</span></div>
+          </div>
+        </div>
+
+        <div class="cifras" data-reveal style="--d:5">
+          <div><strong>6</strong><span>sistemas listos por rubro</span></div>
+          <div><strong>100%</strong><span>en el navegador, sin instalar</span></div>
+          <div><strong>24/7</strong><span>funciona también sin internet</span></div>
+          <div><strong>1 día</strong><span>para empezar a vender</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         3. SISTEMAS
+         Capturas: assets/img/sistemas/ · Videos: assets/videos/ · Demo en vivo: demos/articulos/
+         Textos de la ventana "Ver detalles": assets/js/sistemas.js
+         ================================================================= -->
+    <section class="section" id="sistemas" aria-labelledby="sistemas-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow" data-reveal>Sistemas por rubro</p>
+          <h2 class="section-title" id="sistemas-title" data-reveal style="--d:1">
+            Elige el sistema de <span class="text-gradient">tu negocio</span>
+          </h2>
+          <p class="section-subtitle" data-reveal style="--d:2">
+            Mira el video de cada sistema (1 minuto) o prueba VentaFácil en vivo: se abre con datos de ejemplo y puedes vender, cerrar caja y ver reportes.
+          </p>
+        </header>
+
+        <div class="sistemas-filtros" data-filtros-sistemas data-reveal style="--d:2">
+          <button type="button" data-filtro="todos" class="is-active">Todos</button>
+          <button type="button" data-filtro="comercio">Comercio</button>
+          <button type="button" data-filtro="salud">Salud</button>
+          <button type="button" data-filtro="industria">Industria</button>
+        </div>
+
+        <div class="sistemas-grid">
+          <article class="card card--glow sistema-card" data-grupo="comercio" data-reveal style="--d:0; --accent:var(--color-primary)">
+            <div class="sistema-card__media">
+              <span class="sistema-card__badge"><i></i>Caso real · TIENDA GLAM</span>
+              <img src="assets/img/soluciones/zapatillas.jpg" alt="Tienda de zapatillas que usa GESTIONA POS" loading="lazy">
+              <button type="button" class="sistema-card__play" data-video="gestiona" aria-label="Ver video de GESTIONA POS"><span><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></span>Ver video · 1 min</button>
+            </div>
+            <div class="sistema-card__body">
+              <div class="sistema-card__head">
+                <span class="sistema-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-shoe"/></svg></span>
+                <div><h3>GESTIONA POS</h3><small>Ropa, calzado y accesorios</small></div>
+              </div>
+              <p class="sistema-card__text">Nuestro sistema más completo, con tallas y colores, escáner desde el celular y datos en la nube.</p>
+              <ul class="sistema-card__list">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Inventario por talla y color</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Celular como lector de códigos</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Varios equipos conectados</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Funcionando en tiendas reales</li>
+              </ul>
+              <div class="sistema-card__actions">
+                <a href="#contacto" class="btn btn--primary btn--sm" data-interest="demo-gestiona">
+                  <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg> Cotizar
+                </a>
+                <button type="button" class="btn btn--ghost btn--sm" data-detalle="gestiona">Ver detalles</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card sistema-card" data-grupo="salud comercio" data-reveal style="--d:0; --accent:#3b82f6">
+            <div class="sistema-card__media">
+              <span class="sistema-card__badge"><i></i>Farmacias</span>
+              <img src="assets/img/sistemas/farmacia.png" alt="Pantalla de FarmaPOS" loading="lazy" width="1440" height="900">
+              <button type="button" class="sistema-card__play" data-video="farmacia" aria-label="Ver video de FarmaPOS"><span><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></span>Ver video · 1 min</button>
+            </div>
+            <div class="sistema-card__body">
+              <div class="sistema-card__head">
+                <span class="sistema-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-cross"/></svg></span>
+                <div><h3>FarmaPOS</h3><small>Farmacias y droguerías</small></div>
+              </div>
+              <p class="sistema-card__text">Venta por caja, blíster o unidad, con lotes, vencimientos y libro de recetas.</p>
+              <ul class="sistema-card__list">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Lotes y vencimientos con alertas</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Receta simple, retenida y cheque</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Alternativas por principio activo</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Caja con arqueo y reportes</li>
+              </ul>
+              <div class="sistema-card__actions">
+                <button type="button" class="btn btn--primary btn--sm" data-video="farmacia">
+                  <svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Ver video
+                </button>
+                <button type="button" class="btn btn--ghost btn--sm" data-detalle="farmacia">Ver detalles</button>
+              </div>
+            </div>
+          </article>
+          <article class="card sistema-card" data-grupo="salud comercio" data-reveal style="--d:1; --accent:#14b8a6">
+            <div class="sistema-card__media">
+              <span class="sistema-card__badge"><i></i>Ópticas</span>
+              <img src="assets/img/sistemas/optica.png" alt="Pantalla de VisiónPOS" loading="lazy" width="1440" height="900">
+              <button type="button" class="sistema-card__play" data-video="optica" aria-label="Ver video de VisiónPOS"><span><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></span>Ver video · 1 min</button>
+            </div>
+            <div class="sistema-card__body">
+              <div class="sistema-card__head">
+                <span class="sistema-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-glasses"/></svg></span>
+                <div><h3>VisiónPOS</h3><small>Ópticas</small></div>
+              </div>
+              <p class="sistema-card__text">Órdenes de trabajo con receta, abono y saldo, hasta la entrega de los lentes.</p>
+              <ul class="sistema-card__list">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Recetas ópticas de cada cliente</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Estados: laboratorio, taller, lista</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Aviso por WhatsApp de lentes listos</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Hoja para el laboratorio</li>
+              </ul>
+              <div class="sistema-card__actions">
+                <button type="button" class="btn btn--primary btn--sm" data-video="optica">
+                  <svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Ver video
+                </button>
+                <button type="button" class="btn btn--ghost btn--sm" data-detalle="optica">Ver detalles</button>
+              </div>
+            </div>
+          </article>
+          <article class="card sistema-card" data-grupo="industria" data-reveal style="--d:2; --accent:#f59e0b">
+            <div class="sistema-card__media">
+              <span class="sistema-card__badge"><i></i>Minería</span>
+              <img src="assets/img/sistemas/mineria.png" alt="Pantalla de FaenaPro" loading="lazy" width="1440" height="900">
+              <button type="button" class="sistema-card__play" data-video="mineria" aria-label="Ver video de FaenaPro"><span><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></span>Ver video · 1 min</button>
+            </div>
+            <div class="sistema-card__body">
+              <div class="sistema-card__head">
+                <span class="sistema-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-mountain"/></svg></span>
+                <div><h3>FaenaPro</h3><small>Minería y contratistas</small></div>
+              </div>
+              <p class="sistema-card__text">Producción, equipos, mantención, combustible, bodega, personal y seguridad.</p>
+              <ul class="sistema-card__list">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Producción por turno contra la meta</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Mantención por horómetro con aviso</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Combustible por equipo (L/h)</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Turnos, documentos, EPP e incidentes</li>
+              </ul>
+              <div class="sistema-card__actions">
+                <button type="button" class="btn btn--primary btn--sm" data-video="mineria">
+                  <svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Ver video
+                </button>
+                <button type="button" class="btn btn--ghost btn--sm" data-detalle="mineria">Ver detalles</button>
+              </div>
+            </div>
+          </article>
+          <article class="card sistema-card" data-grupo="comercio" data-reveal style="--d:0; --accent:#d4a857">
+            <div class="sistema-card__media">
+              <span class="sistema-card__badge"><i></i>Perfumerías</span>
+              <img src="assets/img/sistemas/perfumeria.png" alt="Pantalla de POS Perfumería" loading="lazy" width="1440" height="900">
+              <button type="button" class="sistema-card__play" data-video="perfumeria" aria-label="Ver video de POS Perfumería"><span><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></span>Ver video · 1 min</button>
+            </div>
+            <div class="sistema-card__body">
+              <div class="sistema-card__head">
+                <span class="sistema-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-perfume"/></svg></span>
+                <div><h3>POS Perfumería</h3><small>Perfumerías y fragancias</small></div>
+              </div>
+              <p class="sistema-card__text">Catálogo con fotos, venta de decants y caja completa, con un diseño elegante.</p>
+              <ul class="sistema-card__list">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Perfumes por marca, tipo y ml</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Decants de 5 y 10 ml</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Arqueo y cuadre de tarjetas</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Temas noche y oro o blanco y rosa</li>
+              </ul>
+              <div class="sistema-card__actions">
+                <button type="button" class="btn btn--primary btn--sm" data-video="perfumeria">
+                  <svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Ver video
+                </button>
+                <button type="button" class="btn btn--ghost btn--sm" data-detalle="perfumeria">Ver detalles</button>
+              </div>
+            </div>
+          </article>
+          <article class="card sistema-card" data-grupo="comercio" data-reveal style="--d:1; --accent:#6366f1">
+            <div class="sistema-card__media">
+              <span class="sistema-card__badge"><i></i>Tiendas</span>
+              <span class="sistema-card__vivo">Demo en vivo</span>
+              <img src="assets/img/sistemas/articulos.png" alt="Pantalla de VentaFácil" loading="lazy" width="1440" height="900">
+              <button type="button" class="sistema-card__play" data-video="articulos" aria-label="Ver video de VentaFácil"><span><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></span>Ver video · 1 min</button>
+            </div>
+            <div class="sistema-card__body">
+              <div class="sistema-card__head">
+                <span class="sistema-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg></span>
+                <div><h3>VentaFácil</h3><small>Bazares, minimarkets y ferreterías</small></div>
+              </div>
+              <p class="sistema-card__text">El más simple: vender rápido, controlar el stock y cuadrar la caja.</p>
+              <ul class="sistema-card__list">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Lector de código de barras</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Venta por kilo, litro o metro</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Monto libre para lo sin código</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Importa tus productos desde Excel</li>
+              </ul>
+              <div class="sistema-card__actions">
+                <a href="demos/articulos/index.html" class="btn btn--primary btn--sm" target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Probar gratis
+                </a>
+                <button type="button" class="btn btn--ghost btn--sm" data-detalle="articulos">Ver detalles</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card sistema-card sistema-card--medida" data-grupo="comercio salud industria" data-reveal style="--d:2">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg></span>
+            <div>
+              <h3 class="card__title">¿Tu rubro no aparece?</h3>
+              <p class="card__text">Adaptamos uno de nuestros sistemas o lo desarrollamos a medida: repuestos, veterinarias, restaurantes, talleres y más.</p>
+            </div>
+            <a href="#contacto" class="btn btn--ghost" data-interest="sistema">
+              Cuéntanos tu caso
+              <svg class="icon btn__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         4. INCLUIDO EN TODOS LOS SISTEMAS
+         ================================================================= -->
+    <section class="section section--alt" id="incluye" aria-labelledby="incluye-title">
+      <div class="container incluye">
+        <div>
+          <header class="section-header section-header--left">
+            <p class="eyebrow" data-reveal>Incluido en todos</p>
+            <h2 class="section-title" id="incluye-title" data-reveal style="--d:1">
+              Profesionales, <span class="text-gradient">simples de usar</span>
+            </h2>
+            <p class="section-subtitle" data-reveal style="--d:2">Lo que tiene cualquier sistema FREENORTE, sin pagar extra.</p>
+          </header>
+          <div class="incluye__lista">
+            <div class="card incluye__item" data-reveal style="--d:0">
+              <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+              <h3>Computador, tablet y celular</h3>
+              <p>Se instala como una aplicación en Android y iPhone.</p>
+            </div>
+            <div class="card incluye__item" data-reveal style="--d:1">
+              <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-wifi-off"/></svg></span>
+              <h3>Funciona sin internet</h3>
+              <p>Si se corta la señal, sigues vendiendo.</p>
+            </div>
+            <div class="card incluye__item" data-reveal style="--d:2">
+              <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-scan"/></svg></span>
+              <h3>Lector de códigos</h3>
+              <p>Con pistola o con la cámara del celular.</p>
+            </div>
+            <div class="card incluye__item" data-reveal style="--d:3">
+              <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg></span>
+              <h3>Fotos</h3>
+              <p>De productos, recetas, equipos o incidentes.</p>
+            </div>
+            <div class="card incluye__item" data-reveal style="--d:0">
+              <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-cash"/></svg></span>
+              <h3>Caja con arqueo</h3>
+              <p>Apertura, retiros y cierre contando billetes.</p>
+            </div>
+            <div class="card incluye__item" data-reveal style="--d:1">
+              <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg></span>
+              <h3>Usuarios y permisos</h3>
+              <p>Cada vendedor ve solo lo que le corresponde.</p>
+            </div>
+            <div class="card incluye__item" data-reveal style="--d:2">
+              <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-printer"/></svg></span>
+              <h3>Impresión y WhatsApp</h3>
+              <p>Comprobantes, informes y envío por WhatsApp.</p>
+            </div>
+            <div class="card incluye__item" data-reveal style="--d:3">
+              <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+              <h3>Respaldos y seguridad</h3>
+              <p>Contraseñas protegidas y copias de seguridad.</p>
+            </div>
+          </div>
+        </div>
+        <div class="incluye__visual" data-reveal="zoom" style="--d:2">
+          <div class="phone"><img src="assets/img/sistemas/movil-farmacia.png" alt="FarmaPOS en el celular" loading="lazy" width="780" height="1688"></div>
+          <div class="phone"><img src="assets/img/sistemas/movil-mineria.png" alt="FaenaPro en el celular" loading="lazy" width="780" height="1688"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         5. SERVICIOS
+         ================================================================= -->
+    <section class="section section--alt" id="servicios" aria-labelledby="servicios-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow" data-reveal>Servicios</p>
+          <h2 class="section-title" id="servicios-title" data-reveal style="--d:1">
+            Nuestros <span class="text-gradient">servicios</span>
+          </h2>
+          <p class="section-subtitle" data-reveal style="--d:2">
+            Soluciones concretas para digitalizar y hacer crecer tu negocio.
+          </p>
+        </header>
+
+        <div class="grid grid--6">
+          <article class="card service-card" data-reveal style="--d:0">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span>
+            <h3 class="card__title">Desarrollo de sistemas</h3>
+            <p class="card__text">Sistemas personalizados para empresas.</p>
+            <a href="#contacto" class="service-card__link" data-interest="sistema" aria-label="Consultar por desarrollo de sistemas">
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+          <article class="card service-card" data-reveal style="--d:1">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-layout"/></svg></span>
+            <h3 class="card__title">Diseño web</h3>
+            <p class="card__text">Páginas web profesionales y modernas.</p>
+            <a href="#contacto" class="service-card__link" data-interest="web" aria-label="Consultar por diseño web">
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+          <article class="card service-card" data-reveal style="--d:2">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-app"/></svg></span>
+            <h3 class="card__title">Aplicaciones web</h3>
+            <p class="card__text">Sistemas accesibles desde computador, tablet y celular.</p>
+            <a href="#contacto" class="service-card__link" data-interest="app" aria-label="Consultar por aplicaciones web">
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+          <article class="card service-card" data-reveal style="--d:3">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg></span>
+            <h3 class="card__title">Análisis de datos</h3>
+            <p class="card__text">Dashboards e indicadores para apoyar decisiones.</p>
+            <a href="#contacto" class="service-card__link" data-interest="datos" aria-label="Consultar por análisis de datos">
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+          <article class="card service-card" data-reveal style="--d:4">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg></span>
+            <h3 class="card__title">Automatización</h3>
+            <p class="card__text">Digitalización de procesos y herramientas.</p>
+            <a href="#contacto" class="service-card__link" data-interest="automatizacion" aria-label="Consultar por automatización">
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+          <article class="card service-card" data-reveal style="--d:5">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-headset"/></svg></span>
+            <h3 class="card__title">Soporte y mantenimiento</h3>
+            <p class="card__text">Instalación, configuración, actualizaciones y soporte.</p>
+            <a href="#contacto" class="service-card__link" data-interest="soporte" aria-label="Consultar por soporte y mantenimiento">
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         6. POR QUÉ FREENORTE (NOSOTROS)
+         ================================================================= -->
+    <section class="section" id="nosotros" aria-labelledby="nosotros-title">
+      <div class="container about">
+        <div class="about__intro">
+          <p class="eyebrow" data-reveal>Nosotros</p>
+          <h2 class="section-title" id="nosotros-title" data-reveal style="--d:1">
+            ¿Por qué <span class="text-gradient">FREENORTE</span>?
+          </h2>
+          <p class="about__text" data-reveal style="--d:2">
+            Creamos soluciones para tu negocio. FREENORTE es una empresa de tecnología que desarrolla
+            herramientas digitales para negocios que quieren trabajar de forma más ordenada, eficiente y moderna.
+          </p>
+          <p class="about__text" data-reveal style="--d:2">
+            Combinamos desarrollo de software, diseño y análisis de datos para crear herramientas útiles de verdad,
+            pensadas para el día a día de cada cliente.
+          </p>
+          <blockquote class="about__quote" data-reveal style="--d:3">
+            “Creemos que la buena tecnología debe estar al alcance de todos los negocios, no solo de los grandes.”
+          </blockquote>
+        </div>
+
+        <ul class="benefits">
+          <li class="card benefit" data-reveal style="--d:0">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg></span>
+            <h3 class="card__title">Adaptable</h3>
+            <span class="benefit__tagline">a tu operación</span>
+            <p class="card__text">Partimos de cómo funciona tu negocio, no de una plantilla genérica.</p>
+          </li>
+          <li class="card benefit" data-reveal style="--d:1">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"/></svg></span>
+            <h3 class="card__title">Moderno</h3>
+            <span class="benefit__tagline">y fácil de usar</span>
+            <p class="card__text">Interfaces limpias y claras para ti y tu equipo.</p>
+          </li>
+          <li class="card benefit" data-reveal style="--d:2">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></span>
+            <h3 class="card__title">Escalable</h3>
+            <span class="benefit__tagline">según tu crecimiento</span>
+            <p class="card__text">La solución crece contigo: agrega funciones cuando tu negocio lo necesite.</p>
+          </li>
+          <li class="card benefit" data-reveal style="--d:3">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-lifebuoy"/></svg></span>
+            <h3 class="card__title">Soporte</h3>
+            <span class="benefit__tagline">en todo el proceso</span>
+            <p class="card__text">Te acompañamos antes, durante y después de la implementación.</p>
+          </li>
+          <li class="card benefit" data-reveal style="--d:4">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-unlock"/></svg></span>
+            <h3 class="card__title">Accesible</h3>
+            <span class="benefit__tagline">para todo tamaño de negocio</span>
+            <p class="card__text">Herramientas profesionales al alcance de emprendedores y pymes.</p>
+          </li>
+          <li class="card benefit" data-reveal style="--d:5">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg></span>
+            <h3 class="card__title">Personalizado</h3>
+            <span class="benefit__tagline">a la medida</span>
+            <p class="card__text">Desarrollamos funciones específicas cuando tu operación lo requiere.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         7. PROCESO DE TRABAJO
+         ================================================================= -->
+    <section class="section section--alt" id="proceso" aria-labelledby="proceso-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow" data-reveal>Cómo trabajamos</p>
+          <h2 class="section-title" id="proceso-title" data-reveal style="--d:1">
+            Nuestro proceso de <span class="text-gradient">trabajo</span>
+          </h2>
+          <p class="section-subtitle" data-reveal style="--d:2">
+            Un camino claro desde la primera conversación hasta que tu sistema está funcionando.
+          </p>
+        </header>
+
+        <ol class="process">
+          <li class="process__step" data-reveal style="--d:0">
+            <span class="process__marker">01</span>
+            <div>
+              <h3 class="process__title">Cuéntanos tu necesidad</h3>
+              <p class="process__text">Conversamos sobre tu negocio y lo que quieres resolver.</p>
+            </div>
+          </li>
+          <li class="process__step" data-reveal style="--d:1">
+            <span class="process__marker">02</span>
+            <div>
+              <h3 class="process__title">Analizamos tu negocio</h3>
+              <p class="process__text">Revisamos tus procesos para entender cómo trabajas.</p>
+            </div>
+          </li>
+          <li class="process__step" data-reveal style="--d:2">
+            <span class="process__marker">03</span>
+            <div>
+              <h3 class="process__title">Proponemos una solución</h3>
+              <p class="process__text">Te presentamos la propuesta y cómo se verá antes de construirla.</p>
+            </div>
+          </li>
+          <li class="process__step" data-reveal style="--d:3">
+            <span class="process__marker">04</span>
+            <div>
+              <h3 class="process__title">Desarrollamos e implementamos</h3>
+              <p class="process__text">Construimos, instalamos y configuramos el sistema.</p>
+            </div>
+          </li>
+          <li class="process__step" data-reveal style="--d:4">
+            <span class="process__marker">05</span>
+            <div>
+              <h3 class="process__title">Capacitamos a tu equipo</h3>
+              <p class="process__text">Enseñamos a tu equipo a usarlo en el día a día.</p>
+            </div>
+          </li>
+          <li class="process__step" data-reveal style="--d:5">
+            <span class="process__marker">06</span>
+            <div>
+              <h3 class="process__title">Soporte y mejoras</h3>
+              <p class="process__text">Seguimos contigo para resolver dudas y mejorar el sistema.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         8. PORTAFOLIO
+         Para agregar un proyecto: reemplaza el ícono de .portfolio-card__media
+         por <img src="assets/img/portfolio/archivo.jpg" alt="Descripción">
+         ================================================================= -->
+    <section class="section" id="portafolio" aria-labelledby="portafolio-title">
+      <div class="container caso">
+        <div>
+          <p class="eyebrow" data-reveal>Caso real</p>
+          <h2 class="section-title" id="portafolio-title" data-reveal style="--d:1">
+            TIENDA GLAM vende con <span class="text-gradient">GESTIONA POS</span>
+          </h2>
+          <p class="section-subtitle" data-reveal style="--d:2">
+            Una tienda de zapatillas que ordenó sus ventas, su stock por talla y su caja. Hoy vende más rápido, sabe qué reponer y cierra el día con la caja cuadrada.
+          </p>
+          <div class="caso__cifras" data-reveal style="--d:3">
+            <div><strong>Por talla</strong><span>stock al día</span></div>
+            <div><strong>Celular</strong><span>como escáner</span></div>
+            <div><strong>Cierre</strong><span>de caja diario</span></div>
+          </div>
+        </div>
+        <article class="card card--glow" data-reveal="zoom" style="--d:2">
+          <span class="tag tag--live">Funcionando</span>
+          <h3 class="card__title">¿Quieres que tu negocio sea el próximo?</h3>
+          <p class="card__text" style="margin-bottom:1.5rem">Mira el video de tu rubro y, si te gusta, te hacemos una demostración y lo dejamos instalado con tus productos, tus usuarios y la capacitación de tu equipo.</p>
+          <div class="hero__actions" style="max-width:none;margin:0">
+            <a href="#sistemas" class="btn btn--primary">Ver sistemas <svg class="icon btn__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a href="demos/articulos/index.html" class="btn btn--ghost" target="_blank" rel="noopener">Probar demo en vivo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         9. PREGUNTAS FRECUENTES
+         ================================================================= -->
+    <section class="section section--alt" id="preguntas" aria-labelledby="preguntas-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow" data-reveal>Preguntas frecuentes</p>
+          <h2 class="section-title" id="preguntas-title" data-reveal style="--d:1">Resolvemos tus <span class="text-gradient">dudas</span></h2>
+        </header>
+        <div class="faq" data-reveal style="--d:2">
+          <details>
+            <summary>¿Puedo probar el sistema antes de contratar?</summary>
+            <p>Sí. En la sección Sistemas puedes ver el video de cada uno y probar VentaFácil en vivo, con datos de ejemplo. Además te hacemos una demostración guiada del sistema de tu rubro por videollamada o en tu local, sin costo.</p>
+          </details>
+          <details>
+            <summary>¿Necesito instalar algo o comprar un computador especial?</summary>
+            <p>No. Funciona en el navegador de cualquier computador, tablet o celular. Si quieres, se instala como una aplicación con su propio ícono.</p>
+          </details>
+          <details>
+            <summary>¿Qué pasa si se corta internet?</summary>
+            <p>Sigues trabajando. Los sistemas funcionan sin conexión y, si usas la nube, se sincronizan cuando vuelve internet.</p>
+          </details>
+          <details>
+            <summary>¿Puedo usarlo en varios computadores o sucursales?</summary>
+            <p>Sí, con la opción de nube: todos los equipos y celulares comparten los mismos productos, ventas y stock.</p>
+          </details>
+          <details>
+            <summary>¿Emite boleta electrónica?</summary>
+            <p>Los sistemas imprimen un comprobante interno de venta. La boleta electrónica oficial se emite con tu sistema autorizado por el SII; si lo necesitas, te asesoramos para conectarlo.</p>
+          </details>
+          <details>
+            <summary>¿Mis datos están seguros?</summary>
+            <p>Las contraseñas se guardan protegidas y cada usuario tiene sus permisos. Además puedes descargar copias de seguridad cuando quieras y restaurarlas en otro equipo.</p>
+          </details>
+          <details>
+            <summary>¿Cuánto demora tenerlo funcionando?</summary>
+            <p>Normalmente en un día queda listo: cargamos tus productos (incluso desde Excel), creamos los usuarios y capacitamos a tu equipo.</p>
+          </details>
+          <details>
+            <summary>¿Se puede adaptar a mi negocio?</summary>
+            <p>Sí. Ponemos tu logo, tus datos y tus colores, y podemos agregar funciones propias de tu operación.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         10. CONTACTO
+         ================================================================= -->
+    <section class="section" id="contacto" aria-labelledby="contacto-title">
+      <div class="container contact">
+        <div>
+          <p class="eyebrow" data-reveal>Contacto</p>
+          <h2 class="section-title" id="contacto-title" data-reveal style="--d:1">Hablemos de tu negocio</h2>
+          <p class="section-subtitle" data-reveal style="--d:2">
+            Cuéntanos qué necesitas y te ayudamos a encontrar la mejor solución.
+          </p>
+
+          <div class="contact__channels">
+            <a href="#" class="card channel channel--whatsapp" data-whatsapp-link data-reveal style="--d:2">
+              <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span>
+              <span>
+                <span class="channel__label">WhatsApp</span>
+                <span class="channel__value" data-whatsapp-text>+56 9 4942 4720</span>
+              </span>
+            </a>
+            <a href="#" class="card channel" data-email-link data-reveal style="--d:3">
+              <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+              <span>
+                <span class="channel__label">Correo</span>
+                <span class="channel__value" data-email-text>contacto.freenorte@gmail.com</span>
+              </span>
+            </a>
+          </div>
+
+          <div class="card card--glow contact__demo" data-reveal style="--d:4">
+            <p>
+              <strong>¿Quieres ver un sistema en acción?</strong>
+              Agenda una demostración guiada y te mostramos cómo puede ayudar a tu negocio.
+            </p>
+            <a href="#contact-form" class="btn btn--primary" data-demo>
+              <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+              Solicitar demostración
+            </a>
+          </div>
+        </div>
+
+        <div class="card contact__form-card" data-reveal="fade" style="--d:2">
+          <h3 class="contact__form-title">Envíanos un mensaje</h3>
+          <p class="contact__form-subtitle">Los campos con <span class="field__req">*</span> son obligatorios.</p>
+
+          <form class="form" id="contact-form" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="nombre">Nombre <span class="field__req">*</span></label>
+                <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="Tu nombre" required>
+                <small class="field__error" role="alert"></small>
+              </div>
+              <div class="field">
+                <label for="negocio">Negocio o empresa</label>
+                <input type="text" id="negocio" name="negocio" autocomplete="organization" placeholder="Nombre de tu negocio">
+                <small class="field__error" role="alert"></small>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="telefono">Teléfono / WhatsApp <span class="field__req">*</span></label>
+                <input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="+56 9 1234 5678" required>
+                <small class="field__error" role="alert"></small>
+              </div>
+              <div class="field">
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo" autocomplete="email" placeholder="tu@correo.com">
+                <small class="field__error" role="alert"></small>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="rubro">Tipo de negocio</label>
+                <select id="rubro" name="rubro">
+                  <option value="">Selecciona una opción</option>
+                  <option value="zapatillas">Tienda de ropa, zapatillas o calzado</option>
+                  <option value="minimarket">Almacén, bazar o minimarket</option>
+                  <option value="farmacia">Farmacia</option>
+                  <option value="optica">Óptica</option>
+                  <option value="perfumeria">Perfumería</option>
+                  <option value="mineria">Minería o contratista</option>
+                  <option value="ferreteria">Ferretería o librería</option>
+                  <option value="empresa">Empresa</option>
+                  <option value="otro">Otro</option>
+                </select>
+                <small class="field__error" role="alert"></small>
+              </div>
+              <div class="field">
+                <label for="interes">¿En qué te ayudamos? <span class="field__req">*</span></label>
+                <select id="interes" name="interes" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="demo">Demostración de GESTIONA POS</option>
+                  <option value="demo-farmacia">Demostración de FarmaPOS (farmacias)</option>
+                  <option value="demo-optica">Demostración de VisiónPOS (ópticas)</option>
+                  <option value="demo-mineria">Demostración de FaenaPro (minería)</option>
+                  <option value="demo-perfumeria">Demostración de POS Perfumería</option>
+                  <option value="demo-articulos">Demostración de VentaFácil (tiendas)</option>
+                  <option value="demo-gestiona">Cotización de GESTIONA POS</option>
+                  <option value="sistema">Desarrollo de sistema</option>
+                  <option value="web">Diseño web</option>
+                  <option value="app">Aplicación web</option>
+                  <option value="datos">Análisis de datos</option>
+                  <option value="automatizacion">Automatización</option>
+                  <option value="soporte">Soporte y mantenimiento</option>
+                  <option value="otro">Otro</option>
+                </select>
+                <small class="field__error" role="alert"></small>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos brevemente qué necesitas"></textarea>
+              <small class="field__error" role="alert"></small>
+            </div>
+
+            <div class="form__actions">
+              <button type="submit" name="canal" value="whatsapp" class="btn btn--whatsapp btn--lg">
+                <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>
+                Enviar por WhatsApp
+              </button>
+              <button type="submit" name="canal" value="email" class="btn btn--ghost btn--lg">
+                <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+                Enviar por correo
+              </button>
+            </div>
+
+            <p class="form__note">Al enviar se abrirá WhatsApp o tu aplicación de correo con el mensaje listo. Tus datos solo se usan para responderte (<a href="privacidad.html">política de privacidad</a>).</p>
+            <p class="form__status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================
+       11. FOOTER
+       =================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="#inicio" class="logo" aria-label="FREENORTE, ir al inicio">
+            <img src="assets/img/logo/favicon.svg" alt="" class="logo__mark" width="36" height="36">
+            <span class="logo__text">FREE<span>NORTE</span></span>
+          </a>
+          <p class="footer__desc">
+            Sistemas de venta y gestión listos para tu rubro, además de desarrollo a medida, diseño web y soporte. Hecho en Chile.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer__title">Sistemas</h3>
+          <ul class="footer__links">
+            <li><a href="#sistemas" data-detalle="gestiona">GESTIONA POS · ropa y calzado</a></li>
+            <li><a href="#sistemas" data-detalle="farmacia">FarmaPOS · farmacias</a></li>
+            <li><a href="#sistemas" data-detalle="optica">VisiónPOS · ópticas</a></li>
+            <li><a href="#sistemas" data-detalle="mineria">FaenaPro · minería</a></li>
+            <li><a href="#sistemas" data-detalle="perfumeria">POS Perfumería</a></li>
+            <li><a href="#sistemas" data-detalle="articulos">VentaFácil · tiendas</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">Servicios</h3>
+          <ul class="footer__links">
+            <li><a href="#servicios">Desarrollo de sistemas</a></li>
+            <li><a href="#servicios">Diseño web</a></li>
+            <li><a href="#servicios">Aplicaciones web</a></li>
+            <li><a href="#servicios">Automatización</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">Contacto</h3>
+          <ul class="footer__links">
+            <li><a href="#" data-whatsapp-link>WhatsApp</a></li>
+            <li><a href="#" data-email-link data-email-text>contacto.freenorte@gmail.com</a></li>
+            <li><a href="#contacto" data-demo>Solicitar demostración</a></li>
+            <li><a href="privacidad.html">Política de privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> FREENORTE. Todos los derechos reservados.</p>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+      <p class="footer__credits">Foto de la tienda de zapatillas: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>. Las pantallas de los sistemas son capturas reales con datos de ejemplo.</p>
+
+    </div>
+  </footer>
+
+  <!-- Ventana "Ver detalles" de cada sistema (se llena desde assets/js/sistemas.js) -->
+  <dialog class="modal-sistema" id="modal-sistema" aria-label="Detalles del sistema">
+    <button type="button" class="modal-sistema__cerrar" aria-label="Cerrar" data-cerrar-modal>
+      <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+    <div data-modal-contenido></div>
+  </dialog>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="#" class="whatsapp-float" data-whatsapp-link aria-label="Escribir a FREENORTE por WhatsApp">
+    <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>
+  </a>
+
+</body>
+</html>

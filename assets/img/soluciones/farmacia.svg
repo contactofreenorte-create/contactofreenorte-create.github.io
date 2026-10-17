@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Farmacia: letrero con cruz y estanterías de medicamentos -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f1c30"/>
+      <stop offset="1" stop-color="#070b14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="22%" r="55%">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <symbol id="box" viewBox="0 0 48 60">
+      <rect width="48" height="60" rx="4" fill="currentColor"/>
+      <rect y="36" width="48" height="12" fill="#fff" opacity=".35"/>
+      <path d="M24 12v16M16 20h16" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="pills" viewBox="0 0 30 48">
+      <rect x="2" y="12" width="26" height="36" rx="5" fill="#e2e8f0"/>
+      <rect x="2" y="24" width="26" height="14" fill="currentColor" opacity=".75"/>
+      <rect width="30" height="13" rx="3" fill="currentColor"/>
+    </symbol>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect x="60" y="24" width="680" height="410" rx="18" fill="#0b1626" stroke="#38bdf8" stroke-opacity=".22"/>
+  <rect width="800" height="450" fill="url(#glow)"/>
+
+  <!-- Cruz luminosa -->
+  <g>
+    <g fill="#38bdf8" filter="url(#blur)" opacity=".9">
+      <rect x="382" y="36" width="36" height="96" rx="9"/>
+      <rect x="352" y="66" width="96" height="36" rx="9"/>
+    </g>
+    <rect x="382" y="36" width="36" height="96" rx="9" fill="#38bdf8"/>
+    <rect x="352" y="66" width="96" height="36" rx="9" fill="#38bdf8"/>
+    <rect x="390" y="44" width="20" height="80" rx="5" fill="#bae6fd" opacity=".6"/>
+  </g>
+
+  <!-- Repisas laterales superiores -->
+  <g>
+    <use href="#pills" x="100" y="82" width="30" height="48" color="#38bdf8"/>
+    <use href="#pills" x="138" y="82" width="30" height="48" color="#f87171"/>
+    <use href="#pills" x="176" y="82" width="30" height="48" color="#4ade80"/>
+    <use href="#pills" x="214" y="82" width="30" height="48" color="#fbbf24"/>
+    <use href="#pills" x="252" y="82" width="30" height="48" color="#38bdf8"/>
+    <use href="#pills" x="290" y="82" width="30" height="48" color="#a78bfa"/>
+    <use href="#pills" x="480" y="82" width="30" height="48" color="#f472b6"/>
+    <use href="#pills" x="518" y="82" width="30" height="48" color="#38bdf8"/>
+    <use href="#pills" x="556" y="82" width="30" height="48" color="#fbbf24"/>
+    <use href="#pills" x="594" y="82" width="30" height="48" color="#4ade80"/>
+    <use href="#pills" x="632" y="82" width="30" height="48" color="#f87171"/>
+    <use href="#pills" x="670" y="82" width="30" height="48" color="#38bdf8"/>
+    <rect x="90" y="130" width="240" height="7" rx="3.5" fill="#38bdf8" opacity=".85"/>
+    <rect x="470" y="130" width="240" height="7" rx="3.5" fill="#38bdf8" opacity=".85"/>
+  </g>
+
+  <!-- Fila de cajas -->
+  <g>
+    <use href="#box" x="98" y="160" width="48" height="60" color="#38bdf8"/>
+    <use href="#box" x="150" y="166" width="44" height="54" color="#f472b6"/>
+    <use href="#box" x="198" y="156" width="48" height="64" color="#4ade80"/>
+    <use href="#box" x="250" y="164" width="44" height="56" color="#fbbf24"/>
+    <use href="#box" x="298" y="158" width="48" height="62" color="#60a5fa"/>
+    <use href="#box" x="350" y="166" width="44" height="54" color="#e2e8f0"/>
+    <use href="#box" x="398" y="160" width="48" height="60" color="#f87171"/>
+    <use href="#box" x="450" y="164" width="44" height="56" color="#38bdf8"/>
+    <use href="#box" x="498" y="156" width="48" height="64" color="#a78bfa"/>
+    <use href="#box" x="550" y="166" width="44" height="54" color="#4ade80"/>
+    <use href="#box" x="598" y="160" width="48" height="60" color="#fbbf24"/>
+    <use href="#box" x="650" y="164" width="50" height="56" color="#38bdf8"/>
+  </g>
+  <rect x="90" y="220" width="620" height="7" rx="3.5" fill="#38bdf8" opacity=".85"/>
+
+  <!-- Fila de frascos -->
+  <g>
+    <use href="#pills" x="100" y="256" width="30" height="48" color="#fbbf24"/>
+    <use href="#pills" x="138" y="256" width="30" height="48" color="#fbbf24"/>
+    <use href="#pills" x="176" y="256" width="30" height="48" color="#38bdf8"/>
+    <use href="#pills" x="214" y="256" width="30" height="48" color="#38bdf8"/>
+    <use href="#pills" x="252" y="256" width="30" height="48" color="#f472b6"/>
+    <use href="#pills" x="290" y="256" width="30" height="48" color="#f472b6"/>
+    <use href="#pills" x="328" y="256" width="30" height="48" color="#4ade80"/>
+    <use href="#pills" x="366" y="256" width="30" height="48" color="#4ade80"/>
+    <use href="#pills" x="404" y="256" width="30" height="48" color="#a78bfa"/>
+    <use href="#pills" x="442" y="256" width="30" height="48" color="#a78bfa"/>
+    <use href="#pills" x="480" y="256" width="30" height="48" color="#f87171"/>
+    <use href="#pills" x="518" y="256" width="30" height="48" color="#f87171"/>
+    <use href="#pills" x="556" y="256" width="30" height="48" color="#38bdf8"/>
+    <use href="#pills" x="594" y="256" width="30" height="48" color="#fbbf24"/>
+    <use href="#pills" x="632" y="256" width="30" height="48" color="#4ade80"/>
+    <use href="#pills" x="670" y="256" width="30" height="48" color="#38bdf8"/>
+  </g>
+  <rect x="90" y="304" width="620" height="7" rx="3.5" fill="#38bdf8" opacity=".85"/>
+
+  <rect y="410" width="800" height="40" fill="#05080f"/>
+</svg>

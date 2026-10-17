@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Tienda de zapatillas: muro de exhibición con repisas iluminadas -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#121b31"/>
+      <stop offset="1" stop-color="#070b14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="38%" r="60%">
+      <stop offset="0" stop-color="#f472b6" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#f472b6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shelf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbcfe8"/>
+      <stop offset="1" stop-color="#db2777"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f472b6" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#f472b6" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur" x="-20%" y="-200%" width="140%" height="500%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <symbol id="shoe" viewBox="0 0 120 56">
+      <path d="M4 44V24c0-5 3-9 8-10l26-8c6-2 11 0 15 5l14 15c4 4 9 6 15 7l24 3c8 1 13 7 13 14v1H4z" fill="currentColor"/>
+      <path d="M4 44h115v4c0 4-3 7-7 7H11c-4 0-7-3-7-7z" fill="#f1f5f9"/>
+      <path d="M40 14l8 9M48 11l8 9M56 9l8 9" stroke="#f8fafc" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+      <path d="M72 35c10 2 21 3 32 4" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".35" fill="none"/>
+      <circle cx="16" cy="30" r="4" fill="#fff" opacity=".35"/>
+    </symbol>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect x="60" y="24" width="680" height="410" rx="18" fill="#0d1526" stroke="#f472b6" stroke-opacity=".22"/>
+  <rect width="800" height="450" fill="url(#glow)"/>
+
+  <!-- Letrero de neón -->
+  <rect x="300" y="42" width="200" height="6" rx="3" fill="#f472b6" filter="url(#blur)"/>
+  <rect x="300" y="42" width="200" height="6" rx="3" fill="#fbcfe8"/>
+
+  <!-- Repisas -->
+  <g>
+    <rect x="90" y="138" width="620" height="40" fill="url(#light)"/>
+    <rect x="90" y="130" width="620" height="8" rx="4" fill="url(#shelf)"/>
+    <rect x="90" y="233" width="620" height="40" fill="url(#light)"/>
+    <rect x="90" y="225" width="620" height="8" rx="4" fill="url(#shelf)"/>
+    <rect x="90" y="328" width="620" height="40" fill="url(#light)"/>
+    <rect x="90" y="320" width="620" height="8" rx="4" fill="url(#shelf)"/>
+  </g>
+
+  <!-- Zapatillas -->
+  <use href="#shoe" x="110" y="76" width="120" height="56" color="#22d3ee"/>
+  <use href="#shoe" transform="translate(385 76) scale(-1 1)" width="120" height="56" color="#f472b6"/>
+  <use href="#shoe" x="420" y="76" width="120" height="56" color="#e2e8f0"/>
+  <use href="#shoe" transform="translate(695 76) scale(-1 1)" width="120" height="56" color="#a78bfa"/>
+
+  <use href="#shoe" transform="translate(230 171) scale(-1 1)" width="120" height="56" color="#fbbf24"/>
+  <use href="#shoe" x="265" y="171" width="120" height="56" color="#3b82f6"/>
+  <use href="#shoe" transform="translate(540 171) scale(-1 1)" width="120" height="56" color="#f472b6"/>
+  <use href="#shoe" x="575" y="171" width="120" height="56" color="#34d399"/>
+
+  <use href="#shoe" x="110" y="266" width="120" height="56" color="#f87171"/>
+  <use href="#shoe" transform="translate(385 266) scale(-1 1)" width="120" height="56" color="#e2e8f0"/>
+  <use href="#shoe" x="420" y="266" width="120" height="56" color="#60a5fa"/>
+  <use href="#shoe" transform="translate(695 266) scale(-1 1)" width="120" height="56" color="#f472b6"/>
+
+  <rect y="410" width="800" height="40" fill="#05080f"/>
+</svg>

@@ -1,0 +1,215 @@
+/* ==========================================================================
+   RESPONSIVE — Diseño "mobile first"
+   Los estilos base son para celular; aquí se amplían para pantallas mayores.
+     600px  → tablet vertical
+     900px  → tablet horizontal
+     1024px → computador
+     1100px → menú completo en el header
+   ========================================================================== */
+
+/* ---------- Tablet vertical ---------- */
+@media (min-width: 600px) {
+  :root {
+    --container-padding: 1.5rem;
+  }
+
+  .grid--2,
+  .grid--3,
+  .grid--4,
+  .grid--6,
+  .pos__highlights,
+  .benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero__actions {
+    flex-direction: row;
+    justify-content: center;
+    max-width: none;
+  }
+
+  .form__row,
+  .form__actions {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mockup__body {
+    grid-template-columns: 56px 1fr;
+  }
+
+  .mockup__side {
+    display: flex;
+  }
+
+  .kpi strong {
+    font-size: 1.0625rem;
+  }
+
+  .contact__form-card {
+    padding: 2rem;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* ---------- Tablet horizontal ---------- */
+@media (min-width: 900px) {
+  .grid--3,
+  .grid--6,
+  .pos__highlights {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------- Computador ---------- */
+@media (min-width: 1024px) {
+  :root {
+    --header-height: 80px;
+    --container-padding: 2rem;
+  }
+
+  .grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* GESTIONA POS */
+  .pos__highlights {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .pos__highlights li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pos__intro {
+    grid-template-columns: 1fr 1.1fr;
+    gap: 4rem;
+  }
+
+  .mockup__float {
+    left: -2rem;
+  }
+
+  /* Nosotros */
+  .about {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 4.5rem;
+  }
+
+  .about__intro {
+    position: sticky;
+    top: calc(var(--header-height) + 2rem);
+  }
+
+  /* Proceso: línea horizontal */
+  .process {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+  }
+
+  .process::before {
+    top: 28px;
+    right: 8%;
+    bottom: auto;
+    left: 8%;
+    width: auto;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-primary));
+  }
+
+  .process__step {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  /* Contacto */
+  .contact {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 4rem;
+  }
+
+  .contact__form-card {
+    padding: 2.5rem;
+  }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  }
+}
+
+/* ---------- Pantallas grandes ---------- */
+@media (min-width: 1200px) {
+  .grid--6 {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* ---------- Menú completo en el header ---------- */
+@media (min-width: 1100px) {
+  .nav {
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 0;
+    overflow: visible;
+    background: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: none;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    gap: 0.125rem;
+  }
+
+  .nav__link {
+    position: relative;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 0;
+    font-size: 0.9375rem;
+  }
+
+  .nav__link::after {
+    content: "";
+    position: absolute;
+    right: 0.75rem;
+    bottom: 0.15rem;
+    left: 0.75rem;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: transform var(--transition);
+  }
+
+  .nav__link:hover::after,
+  .nav__link.is-active::after {
+    transform: scaleX(1);
+  }
+
+  .nav__cta {
+    width: auto;
+    min-height: 42px;
+    padding: 0.5rem 1.125rem;
+    font-size: 0.875rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
