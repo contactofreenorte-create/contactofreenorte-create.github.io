@@ -1,0 +1,17 @@
+{
+    "name": "SportPOS — Zapatillas y ropa deportiva",
+    "short_name": "SportPOS",
+    "description": "Venta con tallas y colores, cambios, devoluciones y garantías.",
+    "lang": "es-CL",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "orientation": "any",
+    "background_color": "#f3f6fb",
+    "theme_color": "#ea580c",
+    "icons": [
+        { "src": "iconos/icono-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+        { "src": "iconos/icono-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+        { "src": "iconos/icono-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    ]
+}
