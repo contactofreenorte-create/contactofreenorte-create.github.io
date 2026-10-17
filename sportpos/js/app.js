@@ -24,9 +24,17 @@ const App = {
         const config =
             Datos.config();
 
+        const soloVendedor = window.SPORT_MODO === "vendedor";
+
         if (!config.configurado) {
-            this.mostrarPrimerUso();
+            if (soloVendedor) this.mostrarConectarVendedor();
+            else this.mostrarPrimerUso();
             return;
+        }
+
+        // en la app de vendedores no puede quedar una sesion de administrador abierta
+        if (soloVendedor && Sesion.usuario() && Sesion.usuario().rol === "admin") {
+            Sesion.cerrar();
         }
 
         if (!Sesion.usuario()) {
@@ -62,6 +70,26 @@ const App = {
                     </ul>
                 </div>
                 <p style="font-size:12.5px">Versión ${SISTEMA.version}</p>
+            </div>
+        `;
+    },
+
+
+    // app de vendedores: no se crea la tienda aqui, solo se conecta a la que ya existe
+    mostrarConectarVendedor() {
+
+        document.body.innerHTML = `
+            <div class="acceso">
+                ${this.ladoPresentacion()}
+                <div class="acceso-form">
+                    <div class="acceso-caja">
+                        <h2>SportPOS Vendedor</h2>
+                        <p class="sub">Esta aplicación es solo para vendedores. Conéctela con la cuenta de la tienda para descargar productos y usuarios.</p>
+                        <div class="rejilla">
+                            <button type="button" class="btn btn-primario btn-grande" id="puNube">Conectar con la tienda</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         `;
     },
@@ -333,6 +361,11 @@ const App = {
                     return;
                 }
 
+                if (window.SPORT_MODO === "vendedor" && usuario.rol === "admin") {
+                    mostrarError("Esta aplicación es solo para vendedores. El administrador usa la aplicación SportPOS.");
+                    return;
+                }
+
                 this.intentosFallidos = 0;
 
                 const usuarios = Datos.usuarios();
@@ -382,6 +415,7 @@ const App = {
                             </div>
                             <button class="btn btn-fantasma btn-icono" id="btnSalir" title="Cerrar sesión" aria-label="Cerrar sesión">${icono("salir")}</button>
                         </div>
+                        <button class="btn btn-salir-movil" id="btnSalirMovil" type="button">${icono("salir")} Cerrar sesión</button>
                     </div>
                 </aside>
                 <div class="fondo-menu" id="fondoMenu"></div>
@@ -406,7 +440,7 @@ const App = {
         $("#btnMenu").addEventListener("click", () => $("#app").classList.add("menu-abierto"));
         $("#fondoMenu").addEventListener("click", () => $("#app").classList.remove("menu-abierto"));
 
-        $("#btnSalir").addEventListener(
+        [$("#btnSalir"), $("#btnSalirMovil")].forEach(boton => boton.addEventListener(
             "click",
             async evento => {
 
@@ -424,7 +458,7 @@ const App = {
                     this.mostrarIngreso();
                 }
             }
-        );
+        ));
 
         $("#tarjetaUsuario").addEventListener("click", () => abrirMiCuenta());
 

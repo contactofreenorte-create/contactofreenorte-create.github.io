@@ -5,7 +5,7 @@
 // Al publicar cambios, subir el número de VERSION.
 // ==========================================
 
-const VERSION = "sportpos-v3";
+const VERSION = "sportpos-v4";
 
 const ARCHIVOS = [
     "./",
@@ -13,6 +13,7 @@ const ARCHIVOS = [
     "manifest.webmanifest",
     "css/estilos.css",
     "js/tema.js",
+    "js/modo.js",
     "js/base.js",
     "js/datos.js",
     "js/fotos.js",

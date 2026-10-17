@@ -578,6 +578,15 @@ const NubeUI = {
                 </div>
             </div>`;
 
+        if (e.conectado && e.enLinea) {
+            Nube.cuentaEnNube().then(n => {
+                const celda = document.createElement("div");
+                celda.innerHTML = `<div class="etiqueta">Registros en la nube</div><div class="dato">${numero(n)}</div>`;
+                const ficha = $(".ficha-datos", contenedor);
+                if (ficha) ficha.appendChild(celda);
+            }).catch(() => { });
+        }
+
         const bConectar = $("#nbConectar", contenedor);
         if (bConectar) bConectar.addEventListener("click", () => NubeUI.conectar());
 
@@ -605,7 +614,7 @@ const NubeUI = {
             boton.type = "button";
             boton.id = "btnNube";
             boton.className = "btn btn-fantasma btn-icono";
-            boton.addEventListener("click", () => { Configuracion.pestana = "nube"; location.hash = "#configuracion"; if (typeof App !== "undefined" && document.getElementById("cfPestanas")) Configuracion.pintar(); });
+            boton.addEventListener("click", () => { if (window.SPORT_MODO === "vendedor") return; Configuracion.pestana = "nube"; location.hash = "#configuracion"; if (typeof App !== "undefined" && document.getElementById("cfPestanas")) Configuracion.pintar(); });
             const tema = document.getElementById("btnTema");
             if (tema) barra.insertBefore(boton, tema); else barra.appendChild(boton);
         }

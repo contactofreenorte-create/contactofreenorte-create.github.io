@@ -590,7 +590,15 @@ input[type="file"] {
 
 .menu-pie {
     border-top: 1px solid var(--borde);
-    padding: 12px;
+    padding: 12px 12px calc(12px + env(safe-area-inset-bottom));
+}
+
+/* boton grande de "Cerrar sesion": solo en el celular (en el computador esta el icono de la tarjeta) */
+.btn-salir-movil { display: none; width: 100%; margin-top: 8px; justify-content: center; }
+
+@media (max-width: 980px) {
+    .menu { height: 100vh; height: 100dvh; }
+    .btn-salir-movil { display: inline-flex; }
 }
 
 .usuario-tarjeta {
