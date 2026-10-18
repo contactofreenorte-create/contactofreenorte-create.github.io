@@ -5,7 +5,7 @@
 // Al publicar cambios, subir el número de VERSION.
 // ==========================================
 
-const VERSION = "sportpos-v4";
+const VERSION = "sportpos-v5";
 
 const ARCHIVOS = [
     "./",
@@ -18,6 +18,8 @@ const ARCHIVOS = [
     "js/datos.js",
     "js/fotos.js",
     "js/movil.js",
+    "js/lector.js",
+    "js/vendor/zxing-library.min.js",
     "js/impresion.js",
     "js/vendor/supabase.js",
     "js/nube-config.js",
