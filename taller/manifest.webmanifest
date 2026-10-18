@@ -1,0 +1,17 @@
+{
+    "name": "TallerPro — Taller mecánico",
+    "short_name": "TallerPro",
+    "description": "Órdenes de trabajo, clientes y vehículos, repuestos y caja para talleres mecánicos.",
+    "lang": "es-CL",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "orientation": "any",
+    "background_color": "#f3f6fb",
+    "theme_color": "#dc2626",
+    "icons": [
+        { "src": "iconos/icono-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+        { "src": "iconos/icono-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+        { "src": "iconos/icono-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    ]
+}
