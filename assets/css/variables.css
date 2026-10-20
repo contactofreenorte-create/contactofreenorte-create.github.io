@@ -111,3 +111,40 @@
 
   --shadow-glow: 0 10px 36px -10px rgba(227, 184, 91, 0.45);
 }
+
+/* ==========================================================================
+   TEMA CLARO — Fondo claro con dorado (data-theme="claro" en <html>)
+   ========================================================================== */
+:root[data-theme="claro"] {
+  color-scheme: light;
+
+  --color-bg: #faf7f0;
+  --color-bg-alt: #f3eee2;
+  --color-surface: #ffffff;
+  --color-surface-2: #f6f1e4;
+
+  --color-text: #1b160c;
+  --color-text-muted: #4f4636;
+  --color-text-soft: #6e6451;
+
+  --color-primary: #a8740f;
+  --color-primary-strong: #8a5d08;
+  --color-secondary: #c99a3c;
+  --color-on-primary: #fffaf0;
+
+  --color-border: rgba(120, 90, 20, 0.18);
+  --color-border-hover: rgba(168, 116, 15, 0.55);
+
+  --rgb-primary: 168, 116, 15;
+  --rgb-secondary: 201, 154, 60;
+  --rgb-bg: 250, 247, 240;
+  --rgb-line: 120, 90, 20;
+
+  --gradient-primary: linear-gradient(135deg, #c99a3c 0%, #8a5d08 100%);
+  --gradient-text: linear-gradient(120deg, #1b160c 5%, #8a5d08 55%, #b98418 100%);
+  --gradient-card: linear-gradient(160deg, rgba(168, 116, 15, 0.07) 0%, rgba(201, 154, 60, 0.03) 40%, transparent 100%);
+  --gradient-border: linear-gradient(135deg, rgba(168, 116, 15, 0.55), rgba(201, 154, 60, 0.2) 50%, rgba(168, 116, 15, 0.08));
+
+  --shadow-card: 0 18px 40px -26px rgba(60, 40, 5, 0.35);
+  --shadow-glow: 0 10px 30px -12px rgba(168, 116, 15, 0.4);
+}

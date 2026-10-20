@@ -7,7 +7,8 @@
   'use strict';
 
   const TEMAS = {
-    oro: { nombre: 'Oro', color: '#070605', siguiente: 'azul' },
+    oro: { nombre: 'Oro', color: '#070605', siguiente: 'claro' },
+    claro: { nombre: 'Claro', color: '#faf7f0', siguiente: 'azul' },
     azul: { nombre: 'Azul', color: '#05080f', siguiente: 'oro' },
   };
 

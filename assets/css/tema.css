@@ -63,3 +63,47 @@
 .form__note {
   color: var(--color-text-muted);
 }
+
+/* ==========================================================================
+   TEMA CLARO — ajustes de lo que en los otros temas tiene color fijo oscuro
+   ========================================================================== */
+:root[data-theme="claro"] .section--alt {
+  background: linear-gradient(180deg, transparent 0%, rgba(var(--rgb-primary), 0.06) 12%, rgba(var(--rgb-primary), 0.06) 88%, transparent 100%);
+}
+
+:root[data-theme="claro"] .hero__rubros a,
+:root[data-theme="claro"] .cifras div,
+:root[data-theme="claro"] .pos__highlights li,
+:root[data-theme="claro"] .showcase__badge,
+:root[data-theme="claro"] .mockup__float,
+:root[data-theme="claro"] .theme-toggle,
+:root[data-theme="claro"] .btn--ghost {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+:root[data-theme="claro"] .card--glow {
+  background:
+    linear-gradient(160deg, #ffffff, #f6f1e4) padding-box,
+    var(--gradient-border) border-box;
+}
+
+:root[data-theme="claro"] .sistema-card__list {
+  color: var(--color-text-muted);
+}
+
+:root[data-theme="claro"] .sistema-card__badge {
+  background: rgba(12, 19, 34, 0.82);
+  color: #fff;
+}
+
+:root[data-theme="claro"] .portfolio-card__features li {
+  background: rgba(var(--rgb-primary), 0.08);
+}
+
+:root[data-theme="claro"] .header.is-scrolled::before {
+  background: rgba(250, 247, 240, 0.92);
+}
+
+:root[data-theme="claro"] .footer {
+  background: linear-gradient(180deg, transparent, rgba(var(--rgb-primary), 0.09));
+}
