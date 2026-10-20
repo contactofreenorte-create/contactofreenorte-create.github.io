@@ -791,3 +791,13 @@ body.modal-abierto {
     margin: 0.25rem 0 0;
   }
 }
+
+
+/* Video vertical (celular) dentro de la ventana de detalles */
+.modal-sistema__media--vertical video {
+  width: auto;
+  max-width: 100%;
+  max-height: 72vh;
+  aspect-ratio: 9 / 16;
+  margin: 0 auto;
+}

@@ -112,6 +112,138 @@
         ['Celular y cámara', 'Instalable y con lector de códigos.']
       ]
     },
+    sportpos: {
+      nombre: 'SportPOS',
+      rubro: 'Tiendas de zapatillas y ropa deportiva',
+      acento: '#ea580c',
+      imagen: 'assets/img/sistemas/sportpos.png',
+      demo: null,
+      video: 'assets/videos/sportpos.mp4',
+      poster: 'assets/videos/sportpos.jpg',
+      vertical: true,
+      resumen: 'Punto de venta y posventa para tiendas con tallas y colores: vende rápido, controla el stock de cada talla y registra cambios, devoluciones y garantías ligados a la venta.',
+      modulos: [
+        ['Venta por talla y color', 'Busca por marca, modelo o talla, o escanea con la cámara.'],
+        ['Cobro con todos los medios', 'Efectivo con vuelto, débito, crédito y transferencia, con descuentos.'],
+        ['Posventa', 'Cambios de talla, devoluciones y garantías con plazos controlados.'],
+        ['Productos con tallas', 'Crea un modelo con todas sus tallas de una vez, con foto y código.'],
+        ['Inventario', 'Stock por talla, alertas de tallas por agotarse e ingreso de mercadería.'],
+        ['Caja con arqueo', 'Apertura, ingresos, retiros y cierre contando billetes.'],
+        ['Reportes', 'Ventas, ganancia, categorías y vendedores; ya descuentan la posventa.'],
+        ['Usuarios y roles', 'Administrador y vendedores, con recuperación de contraseña.'],
+        ['Celular, PC y nube', 'Se instala en Android, iPhone y Windows; datos en la nube si lo necesitas.']
+      ]
+    },
+    taller: {
+      nombre: 'TallerPro',
+      rubro: 'Talleres mecánicos',
+      acento: '#ef4444',
+      imagen: 'assets/img/sistemas/taller.png',
+      demo: null,
+      video: 'assets/videos/taller.mp4',
+      poster: 'assets/videos/taller.jpg',
+      vertical: true,
+      resumen: 'Órdenes de trabajo con vehículo, presupuesto, repuestos y mano de obra, desde el ingreso hasta la entrega, con aviso de mantención por WhatsApp.',
+      modulos: [
+        ['Órdenes de trabajo', 'Ingresada, en diagnóstico, presupuesto, en reparación y lista para entregar.'],
+        ['Clientes y vehículos', 'Patente, marca, modelo y todo su historial de servicios.'],
+        ['Presupuesto', 'Repuestos y mano de obra, con abonos y saldo.'],
+        ['Repuestos', 'Venta y uso en órdenes con stock descontado automáticamente.'],
+        ['Próximas mantenciones', 'Avisa a tus clientes por WhatsApp cuando les toca.'],
+        ['Caja con arqueo', 'Apertura, ingresos, retiros y cierre por billetes.'],
+        ['Reportes', 'Ventas, ganancia y órdenes entregadas.'],
+        ['Usuarios y roles', 'Administrador y mecánicos o recepción.'],
+        ['Celular, PC y nube', 'Instalable en Android, iPhone y Windows.']
+      ]
+    },
+    tecno: {
+      nombre: 'TecnoPOS',
+      rubro: 'Electrónica y repuestos de celulares',
+      acento: '#22d3ee',
+      imagen: 'assets/img/sistemas/tecno.png',
+      demo: null,
+      video: 'assets/videos/tecno.mp4',
+      poster: 'assets/videos/tecno.jpg',
+      vertical: true,
+      resumen: 'Servicio técnico con IMEI, presupuesto y abonos, garantía de cada reparación y venta de repuestos y accesorios con el stock al día.',
+      modulos: [
+        ['Servicio técnico', 'Cada equipo con su IMEI, falla y estado de la reparación.'],
+        ['Presupuesto y abonos', 'Cobra abonos y el saldo al entregar el equipo.'],
+        ['Garantía de reparación', 'Controla la garantía de cada trabajo entregado.'],
+        ['Venta de repuestos', 'Pantallas, baterías y accesorios con stock y código de barras.'],
+        ['Compatibilidad', 'Modelos compatibles y calidad de cada repuesto.'],
+        ['Clientes', 'Historial de equipos y reparaciones.'],
+        ['Caja con arqueo', 'Apertura, ingresos, retiros y cierre por billetes.'],
+        ['Reportes', 'Ventas, ganancia y reparaciones.'],
+        ['Celular, PC y nube', 'Instalable en Android, iPhone y Windows.']
+      ]
+    },
+    joya: {
+      nombre: 'JoyaPOS',
+      rubro: 'Joyerías y compra de oro',
+      acento: '#eab308',
+      imagen: 'assets/img/sistemas/joya.png',
+      demo: null,
+      video: 'assets/videos/joya.mp4',
+      poster: 'assets/videos/joya.jpg',
+      vertical: true,
+      resumen: 'Precio del día del oro y la plata, joyas por peso y material, compra de oro usado, arreglos y apartados con abonos.',
+      modulos: [
+        ['Precio del día', 'Actualizas el valor del gramo y tus joyas se recalculan solas.'],
+        ['Joyas por peso y material', 'Material, ley, peso y piedra; el sistema calcula el precio.'],
+        ['Compra de oro y plata', 'Compra de oro usado con comprobante y control de caja.'],
+        ['Arreglos', 'Recepción, estado y entrega con abonos.'],
+        ['Apartados', 'Reserva una joya con abonos hasta entregarla.'],
+        ['Inventario', 'Stock, alertas y movimientos.'],
+        ['Caja con arqueo', 'Apertura, ingresos, retiros y cierre por billetes.'],
+        ['Reportes', 'Ventas, ganancia y compras de oro.'],
+        ['Celular, PC y nube', 'Instalable en Android, iPhone y Windows.']
+      ]
+    },
+    belleza: {
+      nombre: 'BellezaPro',
+      rubro: 'Peluquerías, uñas, estética y barberías',
+      acento: '#ec4899',
+      imagen: 'assets/img/sistemas/belleza.png',
+      demo: null,
+      video: 'assets/videos/belleza.mp4',
+      poster: 'assets/videos/belleza.jpg',
+      vertical: true,
+      resumen: 'Agenda de citas con seña, servicios y productos en una sola cuenta, clientas con su historial y caja para tu salón de belleza.',
+      modulos: [
+        ['Agenda de citas', 'Agendada, confirmada, en atención, lista para cobrar y entregada.'],
+        ['Servicios', 'Peluquería, uñas, estética y barbería con su duración y valor.'],
+        ['Seña y cobro', 'Cobra la seña al agendar y el saldo al terminar.'],
+        ['Productos de venta', 'Vende shampoo, tintes, cremas y esmaltes con stock al día.'],
+        ['Clientas', 'Historial de servicios y datos de contacto.'],
+        ['Cobro integrado', 'Servicios, productos y seña en una sola cuenta.'],
+        ['Caja con arqueo', 'Apertura, ingresos, retiros y cierre por billetes.'],
+        ['Reportes', 'Ventas, ganancia y servicios más pedidos.'],
+        ['Celular, PC y nube', 'Instalable en Android, iPhone y Windows.']
+      ]
+    },
+    bodega: {
+      nombre: 'BodegaPro',
+      rubro: 'Bodegas mayoristas y distribuidoras',
+      acento: '#c9a54a',
+      imagen: 'assets/img/sistemas/bodega.png',
+      demo: null,
+      video: 'assets/videos/bodega.mp4',
+      poster: 'assets/videos/bodega.jpg',
+      vertical: true,
+      resumen: 'Inventario, compras, facturación y cuentas por cobrar para bodegas mayoristas. Documentos internos con folio propio, funciona en computador, celular y tablet.',
+      modulos: [
+        ['Facturar', 'Factura, boleta, guía de despacho, nota de venta y cotización desde una sola pantalla.'],
+        ['Precio mayorista', 'Se aplica solo según la cantidad, con descuentos por producto o al total.'],
+        ['Ventas a crédito', 'Plazo y límite de crédito por cliente, con aviso al superarlo.'],
+        ['Documentos', 'Historial, PDF, guías por facturar, notas de crédito y anulaciones.'],
+        ['Cuentas por cobrar y pagar', 'Vencimientos, abonos, estado de cuenta y deudas con proveedores.'],
+        ['Compras', 'Recepción de mercadería: sube el stock y actualiza el costo.'],
+        ['Inventario', 'Stock valorizado, ubicaciones, hoja de conteo y kardex.'],
+        ['Caja y reportes', 'Arqueo, utilidad, mejores clientes y libro de ventas.'],
+        ['Usuarios y roles', 'Administrador, ventas y bodega, cada uno con lo que necesita.']
+      ]
+    },
     perfumeria: {
       nombre: 'POS Perfumería',
       rubro: 'Perfumerías y tiendas de fragancias',
@@ -171,7 +303,7 @@
   /* ---------- Ventana de detalles ---------- */
   function medio(s, conVideo) {
     if (s.video) {
-      return `<div class="modal-sistema__media modal-sistema__media--video">
+      return `<div class="modal-sistema__media modal-sistema__media--video${s.vertical ? ' modal-sistema__media--vertical' : ''}">
         <video src="${s.video}" poster="${s.poster || ''}" controls playsinline preload="${conVideo ? 'auto' : 'none'}" ${conVideo ? 'autoplay' : ''}></video>
       </div>`;
     }

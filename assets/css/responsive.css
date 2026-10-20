@@ -132,6 +132,16 @@
     text-align: center;
   }
 
+  /* Proceso de 3 pasos (servicio de inventario) */
+  .process--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .process--3::before {
+    right: 17%;
+    left: 17%;
+  }
+
   /* Contacto */
   .contact {
     grid-template-columns: 0.85fr 1.15fr;
