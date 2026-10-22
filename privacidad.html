@@ -1,40 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-tema="noche">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Política de privacidad | FREENORTE</title>
-  <meta name="description" content="Cómo FREENORTE usa y protege los datos que nos envías.">
-  <meta name="theme-color" content="#05080f">
+  <meta name="description" content="Qué datos recibe FREENORTE, para qué los usa y qué derechos tienes.">
+  <meta name="theme-color" content="#0b0f17">
   <link rel="icon" href="assets/img/logo/favicon.svg" type="image/svg+xml">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="assets/css/variables.css?v=4">
-  <link rel="stylesheet" href="assets/css/base.css?v=4">
-  <link rel="stylesheet" href="assets/css/layout.css?v=4">
-  <link rel="stylesheet" href="assets/css/components.css?v=4">
-  <link rel="stylesheet" href="assets/css/legal.css?v=4">
+  <link rel="preload" href="assets/fonts/sora-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script>try{var t=localStorage.getItem('fn-tema2');if(t==='dia'||t==='noche')document.documentElement.setAttribute('data-tema',t);}catch(e){}</script>
+  <link rel="stylesheet" href="assets/css/sitio.css">
 </head>
-<body>
-
-  <header class="legal-header">
-    <div class="container legal-header__inner">
-      <a href="index.html" class="logo" aria-label="FREENORTE, ir al inicio">
-        <img src="assets/img/logo/favicon.svg" alt="" class="logo__mark" width="36" height="36">
-        <span class="logo__text">FREE<span>NORTE</span></span>
-      </a>
-      <a href="index.html" class="btn btn--ghost btn--sm">← Volver al sitio</a>
-    </div>
+<body class="pagina-interna">
+  <header class="cabecera is-bajo">
+    <a class="marca" href="index.html" aria-label="FREENORTE, inicio"><span>FREE</span><span class="marca__n">NORTE</span></a>
+    <div class="cabecera__acciones" style="margin-left:auto"><a class="boton boton--cabecera" href="index.html">Volver al sitio</a></div>
   </header>
-
-  <main class="container legal">
-
-    <p class="eyebrow">Tus datos</p>
+  <main class="pagina">
+<p class="etiqueta">Tus datos</p>
     <h1>Política de privacidad</h1>
-    <p class="legal__fecha">Última actualización: 27 de septiembre de 2026</p>
+    <p class="pagina__fecha">Última actualización: 22 de octubre de 2026</p>
 
     <p>En FREENORTE cuidamos la información que nos compartes. Aquí te explicamos, en palabras simples, qué datos recibimos, para qué los usamos y qué derechos tienes, de acuerdo con la ley chilena de protección de datos personales.</p>
 
@@ -61,9 +46,9 @@
     <h2>5. Servicios de terceros</h2>
     <ul>
       <li><strong>WhatsApp (Meta)</strong> y tu proveedor de correo, cuando decides escribirnos por esos medios. Se rigen por sus propias políticas.</li>
-      <li><strong>Google Fonts</strong>, para mostrar las tipografías del sitio. Al cargar la página, tu navegador se conecta a los servidores de Google.</li>
+      <li><strong>Tipografías:</strong> las fuentes Sora e Inter se cargan desde este mismo sitio; no se conecta a Google para mostrarlas.</li>
       <li><strong>jsDelivr</strong>, solo si usas el lector de códigos con la cámara en la demo. La imagen de la cámara se procesa en tu equipo y no se envía a nadie.</li>
-      <li>El sitio está alojado en <strong>Netlify</strong>, que puede registrar datos técnicos de las visitas (como la dirección IP) por seguridad.</li>
+      <li>El sitio está alojado en <strong>GitHub Pages</strong>, que puede registrar datos técnicos de las visitas (como la dirección IP) por seguridad.</li>
     </ul>
 
     <h2>6. Cookies</h2>
@@ -78,12 +63,9 @@
     <h2>9. Cambios</h2>
     <p>Si cambiamos esta política, publicaremos la nueva versión en esta misma página con su fecha de actualización.</p>
 
-    <a href="index.html" class="btn btn--primary legal__volver">Volver al sitio</a>
+        <a class="boton boton--oro pagina__volver" href="index.html">Volver al sitio</a>
   </main>
-
-  <footer class="legal-footer">
-    <div class="container">© 2026 FREENORTE. Todos los derechos reservados.</div>
-  </footer>
-
+  <footer class="pie"><div class="pie__legal"><p>© <span data-year>2026</span> FREENORTE. Sistemas de venta y gestión hechos en Chile.</p><a href="index.html">Inicio</a></div></footer>
+  <script>document.querySelectorAll('[data-year]').forEach(function(e){e.textContent=new Date().getFullYear()});</script>
 </body>
 </html>
